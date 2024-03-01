@@ -1,0 +1,17 @@
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.image-row .image {
+    margin-right: 10px; /* Add a little gap between images */
+}
+
+/* Clearfix to prevent collapsing margins */
+.image-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
