@@ -321,6 +321,7 @@ button.ev-pic{cursor:zoom-in;width:100%}
 .ev h3{font-size:1.3rem}
 .ev p{color:var(--muted)}
 .ev .link{margin-top:4px}
+.ev-body .link + .link{margin-top:0}
 
 /* achievements by year */
 .ach-years{display:flex;flex-direction:column;gap:22px}

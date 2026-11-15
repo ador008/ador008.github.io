@@ -37,6 +37,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Venom Esports (Arena of Valor): co-leader, Dark Slayer laner (leader Diablo). 2022 Arena of Valor Bangladesh Championship: semi-finalist, top 4. Green jerseys = Arena of Valor Bangladesh Championship tournament jersey; blue = Venom Esports club jersey (confirmed). Links: green photo -> 1Mm7hJi5kn post, blue mirror selfie -> 1GbVzEMYyE post.
 - Venom Esports was covered in Jugantor (national daily): Dhaka division final of the Arena of Valor Bangladesh Championship at Jamuna Future Park, BDT 25 lakh prize pool. Ador is third from the left in the photo. Ador called it the semi-final match; confirm wording.
 - D1 Cup (MLBB): runner-up with his own team KINGSMEN (jersey says SGC Kingsmen). His last tournament in Bangladesh before moving to Denmark to study. Year not given yet: shown as "Year to add"; add to the Story tab once known.
+- BASIS Esports Championship 2023: Red Viperz (RV Gaming) champions, BDT 40,000; same team played IESF. Red Viperz post: share/18oXTTXFjQ (poster image redviperz-basis-2023.jpg). Poster lists Xecution, Raeburn, Blaze, Serjjj, K7, Mr.Rey: ask which name was Ador's.
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
