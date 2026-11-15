@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="edu-page">
+<a class="skip" href="#content">Skip to content</a>
 <header class="site-header">
   <div class="container header-in">
     <a class="brand" href="index.html"><img src="images/avatar.jpg" alt="" width="46" height="46"><span><b>Ador Chowdhury</b><small>Cybersecurity &amp; Esports</small></span></a>
@@ -28,9 +29,10 @@
     </div>
   </div>
 </header>
+<div class="nav-backdrop" hidden></div>
 <nav class="drawer" id="drawer" aria-label="Menu"><a class="key" href="index.html">Home</a><a class="key is-active" href="education.html" aria-current="page">Education &amp; CV</a><a class="key" href="esports.html">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
 
-<main class="container">
+<main class="container" id="content">
   <div class="print-head">
     <h1>Ador Chowdhury</h1>
     <p>MSc Cybersecurity student, Aalborg University Copenhagen · Former Team Bangladesh esports captain</p>
@@ -38,12 +40,16 @@
   </div>
   <section class="page-head">
     <a class="crumb" href="index.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Home</a>
-    <div class="page-head-row">
-      <div>
+    <div class="banner banner-edu tilt">
+      <div class="banner-copy">
         <h1>Education &amp; CV</h1>
-        <p>From a Computer Science &amp; Engineering degree in Bangladesh to an MSc in Cybersecurity in Copenhagen.</p>
+        <p class="tagline">From a Computer Science &amp; Engineering degree in Bangladesh to an MSc in Cybersecurity in Copenhagen.</p>
+        <ul class="hl">
+          <li>MSc Cybersecurity, AAU</li><li>BSc Computer Science &amp; Engineering</li><li>Learning Hub project</li>
+        </ul>
+        <button class="key primary lg" type="button" data-print><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M12 18v-6" /><path d="m9 15 3 3 3-3" /></svg>Save CV as PDF</button>
       </div>
-      <button class="key primary lg" type="button" data-print><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M12 18v-6" /><path d="m9 15 3 3 3-3" /></svg>Save CV as PDF</button>
+      <div class="banner-art" aria-hidden="true"><span class="orb"></span><span class="mark">CYBER</span></div>
     </div>
     <div class="pills" role="tablist" aria-label="Education sections">
       <button class="pill" role="tab" id="t-studies" aria-controls="studies">Studies</button>
@@ -66,7 +72,7 @@
       <article class="card proj">
         <div class="proj-img"><img src="images/learning-hub.jpg" alt="Learning Hub website screenshot" width="1270" height="507" loading="lazy"></div>
         <div class="proj-body">
-          <span class="meta">July 2023 · Final-year project</span>
+          <span class="meta">Final-year project, July 2023</span>
           <h3>Learning Hub</h3>
           <p>A free e-learning platform for National University students. Courses are organised by semester, with exam question collections, answers as PDF files and video tutorials, plus a community section where students share thoughts and feedback.</p>
           <a class="key" href="https://github.com/ador008/Learning-Hub/tree/main/hub"><svg aria-hidden="true" width="17" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>View code</a>
@@ -94,7 +100,6 @@
 <div class="modal" id="about" role="dialog" aria-modal="true" aria-labelledby="about-t">
   <div class="sheet">
     <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
-    <span class="kicker">About me</span>
     <h2 id="about-t">Technology and competition, one mindset</h2>
     <p>I'm a Computer Science &amp; Engineering graduate, now doing an MSc in Cybersecurity at Aalborg University Copenhagen. Alongside my studies, I have spent years in competitive esports as a player, team captain, shoutcaster and tournament organizer.</p>
     <p>I have played Mobile Legends: Bang Bang since 2017, and in 2023 I captained Team Bangladesh at the IESF Asia Qualifier in Saudi Arabia. Today I live in Denmark, where I'm building a home for mobile esports through Mobile Esports Denmark.</p>
@@ -110,7 +115,6 @@
 <div class="modal" id="contact" role="dialog" aria-modal="true" aria-labelledby="contact-t">
   <div class="sheet">
     <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
-    <span class="kicker">Contact</span>
     <h2 id="contact-t">Let's talk</h2>
     <p>Open to cybersecurity opportunities, esports projects and collaborations.</p>
     <div class="rows">

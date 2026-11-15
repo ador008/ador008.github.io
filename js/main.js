@@ -11,15 +11,36 @@
     });
   });
 
-  // ---------- Mobile menu ----------
+  // ---------- Mobile menu (slide-over with backdrop) ----------
   var toggle = document.querySelector('.nav-toggle'), drawer = document.getElementById('drawer');
+  var backdrop = document.querySelector('.nav-backdrop');
+  function setMenu(open) {
+    if (!toggle || !drawer) return;
+    drawer.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (backdrop) backdrop.hidden = !open;
+  }
   if (toggle && drawer) {
-    toggle.addEventListener('click', function () {
-      var open = drawer.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    drawer.addEventListener('click', function (e) {
-      if (e.target.closest('a,button')) { drawer.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+    toggle.addEventListener('click', function () { setMenu(!drawer.classList.contains('open')); });
+    drawer.addEventListener('click', function (e) { if (e.target.closest('a,button')) setMenu(false); });
+    if (backdrop) backdrop.addEventListener('click', function () { setMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+  }
+
+  // ---------- 3D tilt with glare (mouse only, not with reduced motion) ----------
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.tilt').forEach(function (card) {
+      var g = document.createElement('span'); g.className = 'glare'; g.setAttribute('aria-hidden', 'true'); card.appendChild(g);
+      card.addEventListener('pointermove', function (e) {
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+        card.style.setProperty('--ry', ((x - 0.5) * 7).toFixed(2) + 'deg');
+        card.style.setProperty('--rx', ((0.5 - y) * 6).toFixed(2) + 'deg');
+        card.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+        card.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+        card.classList.add('tilting');
+      });
+      card.addEventListener('pointerleave', function () { card.classList.remove('tilting'); });
     });
   }
 
@@ -136,7 +157,7 @@
         '<h3 style="margin-top:12px">' + esc(s.title) + '</h3>' +
         '<p class="tagline">' + esc(s.event) + '</p>' +
         '<p>' + esc(s.note) + '</p>' +
-        '<a class="link" href="' + esc(s.href) + '" target="_blank" rel="noopener">' + esc(s.link) + ' ↗</a>' +
+        '<a class="link" href="' + esc(s.href) + '" target="_blank" rel="noopener">' + esc(s.link) + '</a>' +
         '</div>';
       slides.forEach(function (sl, i) { sl.setAttribute('aria-hidden', i === current ? 'false' : 'true'); });
     }

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="es-page">
+<a class="skip" href="#content">Skip to content</a>
 <header class="site-header">
   <div class="container header-in">
     <a class="brand" href="index.html"><img src="images/avatar.jpg" alt="" width="46" height="46"><span><b>Ador Chowdhury</b><small>Cybersecurity &amp; Esports</small></span></a>
@@ -28,19 +29,22 @@
     </div>
   </div>
 </header>
+<div class="nav-backdrop" hidden></div>
 <nav class="drawer" id="drawer" aria-label="Menu"><a class="key" href="index.html">Home</a><a class="key" href="education.html">Education &amp; CV</a><a class="key is-active" href="esports.html" aria-current="page">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
 
-<main class="container">
+<main class="container" id="content">
   <section class="page-head">
     <a class="crumb" href="index.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Home</a>
-    <h1>Esports career</h1>
-    <p>Competing in Mobile Legends: Bang Bang since 2017, captain of Team Bangladesh in 2023, and now building mobile esports in Denmark.</p>
-    <ul class="mini-stats">
-      <li><b>2017</b> started competing</li>
-      <li><b>Captain</b> Team Bangladesh 2023</li>
-      <li><b>2 titles</b> with Red Viperz</li>
-      <li><b>Founder</b> Mobile Esports Denmark</li>
-    </ul>
+    <div class="banner banner-es tilt">
+      <div class="banner-copy">
+        <h1>Esports</h1>
+        <p class="tagline">Competing in Mobile Legends: Bang Bang since 2017, captain of Team Bangladesh in 2023, and now building mobile esports in Denmark.</p>
+        <ul class="hl">
+          <li>Playing since 2017</li><li>Team Bangladesh captain</li><li>2 titles with Red Viperz</li><li>Founder of Mobile Esports Denmark</li>
+        </ul>
+      </div>
+      <div class="banner-art" aria-hidden="true"><span class="orb"></span><span class="mark">MLBB</span></div>
+    </div>
     <div class="pills" role="tablist" aria-label="Esports sections">
       <button class="pill" role="tab" id="t-highlights" aria-controls="highlights">Highlights</button>
       <button class="pill" role="tab" id="t-career" aria-controls="career">Career</button>
@@ -92,7 +96,7 @@
       <ol class="tl">
         <li><div class="when">2026</div><div><h3>Founder, Mobile Esports Denmark<span class="now">Now</span></h3><p class="org">Copenhagen, Denmark</p><p>A community for Danish mobile players with a Discord server, a Facebook page and online tournaments, starting with the eFootball Community Cup DK.</p></div></li>
         <li><div class="when">2023</div><div><h3>Captain, Team Bangladesh</h3><p class="org">IESF Asia Qualifier, Saudi Arabia</p><p>Selected after my team Red Viperz won the IESF 2023 Bangladesh qualifier (MLBB).</p></div></li>
-        <li><div class="when">Teams</div><div><h3>Red Viperz · Venom Esports · KINGSMEN</h3><p class="org">Mobile Legends: Bang Bang, Bangladesh</p><p>Led KINGSMEN as team leader, one of the top 5 teams in Bangladesh.</p></div></li>
+        <li><div class="when">Teams</div><div><h3>Red Viperz, Venom Esports and KINGSMEN</h3><p class="org">Mobile Legends: Bang Bang, Bangladesh</p><p>Led KINGSMEN as team leader, one of the top 5 teams in Bangladesh.</p></div></li>
         <li><div class="when">2017</div><div><h3>Started competing</h3><p class="org">Mobile Legends: Bang Bang</p></div></li>
       </ol>
     </section>
@@ -100,10 +104,10 @@
     <section class="panel" role="tabpanel" id="achievements" aria-labelledby="t-achievements">
       <h2>Achievements</h2><p class="sub">Titles, placements and broadcast roles.</p>
       <ul class="ach">
-        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, IESF 2023 Bangladesh qualifier</h3><small>2023 · Red Viperz · MLBB</small><a class="link" href="https://liquipedia.net/mobilelegends/IESF/World_Esports_Championships/2023/Bangladesh_Qualifiers">Results on Liquipedia <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, BASIS Esports Championship</h3><small>February 2023 · Red Viperz · MLBB</small><a class="link" href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol">Announcement <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal silver"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><div><h3>1st runner-up, IUB Gaming Fest</h3><small>December 2022 · MLBB</small><a class="link" href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><h3>Official shoutcaster, Angular Eid Invitational</h3><small>May 2022 · MLBB</small><a class="link" href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
+        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, IESF 2023 Bangladesh qualifier</h3><small>With Red Viperz, 2023</small><a class="link" href="https://liquipedia.net/mobilelegends/IESF/World_Esports_Championships/2023/Bangladesh_Qualifiers">Results on Liquipedia</a></div></li>
+        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, BASIS Esports Championship</h3><small>With Red Viperz, February 2023</small><a class="link" href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol">Announcement</a></div></li>
+        <li><span class="medal silver"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><div><h3>1st runner-up, IUB Gaming Fest</h3><small>December 2022</small><a class="link" href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769">See the post</a></div></li>
+        <li><span class="medal"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><h3>Official shoutcaster, Angular Eid Invitational</h3><small>May 2022</small><a class="link" href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl">See the post</a></div></li>
       </ul>
     </section>
 
@@ -128,7 +132,6 @@
 <div class="modal" id="about" role="dialog" aria-modal="true" aria-labelledby="about-t">
   <div class="sheet">
     <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
-    <span class="kicker">About me</span>
     <h2 id="about-t">Technology and competition, one mindset</h2>
     <p>I'm a Computer Science &amp; Engineering graduate, now doing an MSc in Cybersecurity at Aalborg University Copenhagen. Alongside my studies, I have spent years in competitive esports as a player, team captain, shoutcaster and tournament organizer.</p>
     <p>I have played Mobile Legends: Bang Bang since 2017, and in 2023 I captained Team Bangladesh at the IESF Asia Qualifier in Saudi Arabia. Today I live in Denmark, where I'm building a home for mobile esports through Mobile Esports Denmark.</p>
@@ -144,7 +147,6 @@
 <div class="modal" id="contact" role="dialog" aria-modal="true" aria-labelledby="contact-t">
   <div class="sheet">
     <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
-    <span class="kicker">Contact</span>
     <h2 id="contact-t">Let's talk</h2>
     <p>Open to cybersecurity opportunities, esports projects and collaborations.</p>
     <div class="rows">
