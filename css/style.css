@@ -307,6 +307,7 @@ main{flex:1}
 .ev.has-pic{grid-template-columns:minmax(0,320px) minmax(0,1fr)}
 .ev.star{border-color:rgba(245,165,36,.5);background:linear-gradient(135deg,rgba(245,165,36,.12),transparent 60%),var(--card)}
 .ev-pic{position:relative;border:0;padding:0;background:var(--photo-bg);cursor:pointer;display:block;min-height:200px;overflow:hidden}
+button.ev-pic{cursor:zoom-in;width:100%}
 .ev-pic.poster{background:#120708;aspect-ratio:1/1;min-height:0}
 .ev-pic.poster img{object-fit:contain}
 .ev-open{position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;gap:6px;padding:.35rem .7rem;border-radius:20px;background:rgba(10,10,10,.82);color:#fff;font-weight:600;font-size:.85rem;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s}

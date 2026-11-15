@@ -196,7 +196,7 @@
         '<h3 style="margin-top:12px">' + esc(s.title) + '</h3>' +
         '<p class="tagline">' + esc(s.event) + '</p>' +
         '<p>' + esc(s.note) + '</p>' +
-        '<a class="link" href="' + esc(s.href) + '" target="_blank" rel="noopener">' + esc(s.link) + '</a>' +
+        (s.href ? '<a class="link" href="' + esc(s.href) + '" target="_blank" rel="noopener">' + esc(s.link) + '</a>' : '') +
         '</div>';
       slides.forEach(function (sl, i) { sl.setAttribute('aria-hidden', i === current ? 'false' : 'true'); });
     }
