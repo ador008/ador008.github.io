@@ -326,6 +326,7 @@ button.ev-pic{cursor:zoom-in;width:100%}
 .ach-years{display:flex;flex-direction:column;gap:22px}
 .ach-year{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;align-items:start}
 .yr-label{font-family:var(--heading);font-size:2.4rem;font-weight:800;line-height:1;color:var(--accent);position:sticky;top:calc(var(--header-h) + 16px)}
+.yr-label.yr-tbc{font-size:1.2rem;line-height:1.2;color:var(--muted)}
 
 /* teams */
 .teams{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
