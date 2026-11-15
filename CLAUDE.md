@@ -45,6 +45,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - LW Magic Chess Nation Cup Season 01 (MLBB Magic Chess), posted 25 Aug 2021, with BD Coins; prizes 1,100/900/600 diamonds, 4th-8th 79 each; 128 slots; free; registration 25-29 Aug; post share/p/1D1AxS25nU.
 - MLBB Cosplay Competition (gaming cosplay contest, poster branded Lazzy Plays): winners announced live on Lazzy Winners 10 August at 2 pm; year not given; post share/p/1DyLiF3veF.
 - Queens of MLBB: 4v4 brawl, girl gamers only, presented by Mobile Legends: Bang Bang Official Bangladesh (poster branded Lazzy Plays); winner 2,000 diamonds, runner-up 1,000; free; registration from 25 May; year not given; post share/p/1JNtajHqqc.
+- Banner backgrounds (chosen by Ador): Personal details uses the coat photo (images/portrait-coat.jpg, from old pic15.jpg); Esports uses the D1 Cup trophy photo (images/kingsmen-d1-cup.jpg).
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador

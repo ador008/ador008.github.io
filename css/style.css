@@ -246,6 +246,10 @@ main{flex:1}
 .banner-edu .hl li{background:rgba(200,16,46,.12);border-color:rgba(200,16,46,.3)}
 .banner-es .hl li{background:rgba(245,165,36,.12);border-color:rgba(245,165,36,.3)}
 .banner-art{position:relative;align-self:stretch;min-height:180px}
+.banner{min-height:340px}
+.banner-copy{position:relative;z-index:1}
+.banner-photo{position:absolute;top:0;right:0;bottom:0;width:58%;z-index:0;background-size:cover;background-repeat:no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.55) 30%,#000 62%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.55) 30%,#000 62%)}
+.banner-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--card) 0%,transparent 40%)}
 .orb{position:absolute;right:8%;top:50%;width:min(230px,65%);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;filter:blur(28px);opacity:.75}
 .banner-edu .orb{background:radial-gradient(circle,var(--primary-glow),var(--primary) 40%,transparent 70%)}
 .banner-es .orb{background:radial-gradient(circle,var(--accent-glow),var(--accent) 40%,transparent 70%)}
@@ -366,6 +370,9 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .drawer.open{transform:none;visibility:visible}
   .banner{grid-template-columns:1fr;padding:28px 24px}
   .banner-art{position:absolute;inset:0;z-index:-1;min-height:0}
+  .banner{min-height:0;padding-top:200px}
+  .banner-photo{width:100%;height:260px;bottom:auto;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent 100%);mask-image:linear-gradient(180deg,#000 45%,transparent 100%)}
+  .banner-photo::after{display:none}
   .orb{width:200px;right:-50px;top:30%;opacity:.55}
   .drawer .key{justify-content:flex-start;width:100%}
   .hero-in{grid-template-columns:1fr;gap:34px}
@@ -406,7 +413,7 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   @page{margin:16mm 14mm}
   :root,[data-theme]{--bg:#fff;--card:#fff;--card-2:#fff;--text:#000;--muted:#333;--border-subtle:#ccc}
   body{background:#fff;color:#000;font-size:10.5pt}
-  .site-header,.drawer,.pills,.site-footer,.wa-fab,.page-head .key,.crumb,.modal,.flood,.proj-img,.banner-art,.hl,.skip,.nav-backdrop{display:none!important}
+  .site-header,.drawer,.pills,.site-footer,.wa-fab,.page-head .key,.crumb,.modal,.flood,.proj-img,.banner-art,.banner-photo,.hl,.skip,.nav-backdrop{display:none!important}
   .banner{display:block;padding:0;border:0;background:none}
   .banner h1{font-size:18pt}
   .print-head{display:block;border-bottom:2px solid #C8102E;padding-bottom:8pt;margin-bottom:10pt}
