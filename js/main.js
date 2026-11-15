@@ -19,7 +19,7 @@
     el.textContent = new Date().getFullYear();
   });
 
-  var targets = document.querySelectorAll('.sec .wrap > *, .ach');
+  var targets = document.querySelectorAll(".sec .wrap > *, .ach, .block, .track-head");
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
