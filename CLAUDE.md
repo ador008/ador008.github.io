@@ -5,7 +5,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 ## Structure
 - `index.html`: simple homepage (intro, About/Contact pop-ups, two section cards).
 - `personal.html`: Personal details (for cybersecurity job applications, and the source for his CV). Tabs: Profile, Education, Experience, Projects, Skills, Certificates, plus "Save CV as PDF" (print stylesheet). `education.html` redirects here.
-- `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Teams, Skills. Goal: every esports story and achievement with its year.
+- `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Organizer (tournaments he hosted on Lazzy Winners, poster cards, newest first), Teams, Skills. Goal: every esports story and achievement with its year.
 - `achievement.html`: redirect to `esports.html`. Keep it: the proposal PDF links to it.
 - `css/style.css`: all styles, colour tokens at the top (dark default, `[data-theme="light"]` overrides).
 - `js/main.js`: theme toggle, menu, pop-ups, tabs, carousel, View all, lightbox, print.
@@ -40,6 +40,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - BASIS Esports Championship 2023: Red Viperz (RV Gaming) champions, BDT 40,000; same team played IESF. Red Viperz post: share/18oXTTXFjQ (poster image redviperz-basis-2023.jpg). Poster lists Xecution, Raeburn, Blaze, Serjjj, K7, Mr.Rey: ask which name was Ador's.
 - Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier and went to Nepal for the main event. Post: share/p/152EapeM9ZL. Year and result in Nepal not given yet.
 - His gaming Facebook page is "Lazzy Winners" (share/1JjWPBxP6Y), linked from the homepage, contact pop-up and footer. Ador is collecting screenshots of tournaments he hosted there (Facebook is not readable from this environment).
+- Hosted on Lazzy Winners: Grimlock Battle, Roger 1v1 (MLBB), posted 24 Mar 2023, free entry with Grimlock skin, prize pool BDT 1,500, registration 25-28 March, post share/p/1F1kUBCtEf. Next screenshot hinted at a "brawl" tournament with a top 8.
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
