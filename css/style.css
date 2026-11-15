@@ -379,8 +379,7 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .hero-photo{width:min(260px,70%);justify-self:start;order:-1}
   .look{grid-template-columns:1fr}
   .profile{grid-template-columns:1fr}
-  .idcard{position:static;display:grid;grid-template-columns:140px minmax(0,1fr)}
-  .idcard img{height:100%}
+  .idcard{position:static}
   .look-panel{position:static}
   .flood-grid{grid-template-columns:repeat(3,1fr)}
 }
@@ -393,8 +392,6 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .ev-pic{min-height:0;aspect-ratio:16/10}
   .chapter-head{min-height:120px}
   .idlist div{grid-template-columns:96px minmax(0,1fr)}
-  .idcard{display:block}
-  .idcard img{height:auto;aspect-ratio:16/11;object-position:50% 30%}
   .path{min-height:420px}
   .path-edu .bg{background-position:50% 12%}
   .path-es .bg{background-position:50% 8%}
