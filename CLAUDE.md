@@ -40,7 +40,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - BASIS Esports Championship 2023: Red Viperz (RV Gaming) champions, BDT 40,000; same team played IESF. Red Viperz post: share/18oXTTXFjQ (poster image redviperz-basis-2023.jpg). Poster lists Xecution, Raeburn, Blaze, Serjjj, K7, Mr.Rey: ask which name was Ador's.
 - Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier and went to Nepal for the main event. Post: share/p/152EapeM9ZL. Year and result in Nepal not given yet.
 - His gaming Facebook page is "Lazzy Winners" (share/1JjWPBxP6Y), linked from the homepage, contact pop-up and footer. Ador is collecting screenshots of tournaments he hosted there (Facebook is not readable from this environment).
-- Hosted on Lazzy Winners: Grimlock Battle, Roger 1v1 (MLBB), posted 24 Mar 2023, free entry with Grimlock skin, prize pool BDT 1,500, registration 25-28 March, post share/p/1F1kUBCtEf. Next screenshot hinted at a "brawl" tournament with a top 8.
+- Hosted on Lazzy Winners: Grimlock Battle, Roger 1v1 (MLBB), posted 24 Mar 2023, free entry with Grimlock skin, prize pool BDT 1,500, registration 25-28 March, post share/p/1F1kUBCtEf. Brawl Legends, 4v4 brawl (MLBB), posted 6 Mar 2023, prize pool BDT 2,000, registration opened 6 March, post share/p/1E3YbmeKVw (poster spells it "Brawl Lagends"; a later post mentioned its top 8 teams).
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
