@@ -23,5 +23,13 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Never invent facts. If a detail is missing (skills, dates, university name), leave it out or show "Coming soon", and ask him.
 - Use plain, simple English when explaining things to Ador.
 
+## Current status (handoff, 15 Nov 2026)
+- Branch `claude/busy-hamilton-2lj1l7` holds the redesign; it is NOT merged yet. `main` still has the old site plus the LinkedIn/WhatsApp/Denmark contact updates (PRs #1 and #2, merged).
+- Ador said the current design "is okay for now"; next step is optimising it page by page.
+- Preview: private claude.ai artifact https://claude.ai/artifact/K5qdUtUsAxfuw9bRLqSqjZ. It is a copy of the site: `index.html` there has no `<!DOCTYPE>/<html>/<head>/<body>` wrapper (the artifact adds it); the other files are the repo files as-is. Republish it after each change (read it first, then publish to that URL). Save CV as PDF and mailto/tel links do not work inside the preview, only on the real site.
+- When Ador approves: open a PR from the branch to `main` and let him merge.
+- Earlier work in this project: his proposal PDF "Mobile Esports Denmark – Proposal for Esport Danmark" was redesigned (done, not in this repo).
+- Environment: skills.sh and zabulanakakil.github.io are allowed hosts; Canva connector works; find-skills is installed by the environment setup script; Ador enabled the frontend-design skill (load it for design work).
+
 ## Content still needed from Ador
 Technical skills, BSc university name and years, MSc dates, academic achievements, other projects, work experience, languages, team years and in-game roles, who won MVP in photo acv06.
