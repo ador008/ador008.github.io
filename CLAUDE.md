@@ -34,6 +34,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 ## Esports facts confirmed by Ador
 - In-game name: Ares. Four clubs: Soulz of BD (co-leader, midlaner/ADC), Red Viperz, Venom Esports, and his own team KINGSMEN.
 - Virtual Cup 2020 (BD Coins and The Axis): Soulz of BD champions, 3-1 vs Blank Nation, Ador MVP of the final.
+- Venom Esports (Arena of Valor): co-leader, Dark Slayer laner (leader Diablo). 2022 Arena of Valor Bangladesh Championship: semi-finalist, top 4. Venom photo links: green-jersey photo -> 1Mm7hJi5kn post, mirror selfie -> 1GbVzEMYyE post (order assumed, confirm with Ador).
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
