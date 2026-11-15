@@ -20,6 +20,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 ## Working rules
 - Show Ador a clickable preview before anything is merged. He does not want screenshots. Publish the preview as a private claude.ai artifact (raw.githack did not load the CSS on his phone).
 - Work on a branch and open a pull request; Ador merges, and GitHub Pages deploys from `main`.
+- The portfolio covers his PAST activities only. Do not mention Mobile Esports Denmark anywhere on the site: it is not approved yet. Add it only if Ador says the meeting went well.
 - Never invent facts. If a detail is missing (skills, dates, university name), leave it out or show "Coming soon", and ask him.
 - Use plain, simple English when explaining things to Ador.
 
