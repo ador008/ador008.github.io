@@ -31,6 +31,11 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Earlier work in this project: his proposal PDF "Mobile Esports Denmark – Proposal for Esport Danmark" was redesigned (done, not in this repo).
 - Environment: skills.sh and zabulanakakil.github.io are allowed hosts; Canva connector works; find-skills is installed by the environment setup script; Ador enabled the frontend-design skill (load it for design work).
 
+## Esports facts confirmed by Ador
+- In-game name: Ares. Four clubs: Soulz of BD (co-leader, midlaner/ADC), Red Viperz, Venom Esports, and his own team KINGSMEN.
+- Virtual Cup 2020 (BD Coins and The Axis): Soulz of BD champions, 3-1 vs Blank Nation, Ador MVP of the final.
+- Images that have a source post link to that post when clicked.
+
 ## Content still needed from Ador
-Esports: missing years (2018 to 2021, 2024 to 2025), other titles and placements with years, years per team and in-game role. Personal details: languages, work experience, certificates/courses, more projects.
+Esports: missing years (2018, 2019, 2021, 2024, 2025); confirm the year he joined Soulz of BD (roster post placed under 2020), other titles and placements with years, years per team and in-game role. Personal details: languages, work experience, certificates/courses, more projects.
 Technical skills, BSc university name and years, MSc dates, academic achievements, other projects, work experience, languages, team years and in-game roles, who won MVP in photo acv06.

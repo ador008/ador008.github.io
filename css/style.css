@@ -305,7 +305,13 @@ main{flex:1}
 .ev{display:grid;grid-template-columns:1fr;border-radius:var(--r-md);background:var(--card);border:1px solid var(--border-subtle);overflow:hidden}
 .ev.has-pic{grid-template-columns:minmax(0,320px) minmax(0,1fr)}
 .ev.star{border-color:rgba(245,165,36,.5);background:linear-gradient(135deg,rgba(245,165,36,.12),transparent 60%),var(--card)}
-.ev-pic{border:0;padding:0;background:var(--photo-bg);cursor:zoom-in;display:block;min-height:200px}
+.ev-pic{position:relative;border:0;padding:0;background:var(--photo-bg);cursor:pointer;display:block;min-height:200px;overflow:hidden}
+.ev-pic.poster{background:#120708;aspect-ratio:1/1;min-height:0}
+.ev-pic.poster img{object-fit:contain}
+.ev-open{position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;gap:6px;padding:.35rem .7rem;border-radius:20px;background:rgba(10,10,10,.82);color:#fff;font-weight:600;font-size:.85rem;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s}
+.ev-pic:hover .ev-open,.ev-pic:focus-visible .ev-open{opacity:1;transform:none}
+@media (hover:none){.ev-open{opacity:1;transform:none}}
+.banner .tagline strong{color:var(--text)}
 .ev-pic img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .ev-pic:hover img{transform:scale(1.04)}
 .ev-body{padding:20px 22px;display:flex;flex-direction:column;gap:6px}
