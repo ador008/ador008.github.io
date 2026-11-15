@@ -44,6 +44,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - GenJam Season 01: 5v5 draft pick fun tournament, mid-lane heroes only (MLBB), posted 22 Nov 2021 by Niaz Nur, co-hosted with itzDiablo and Carnival Of Ashes; winner 4,500 diamonds, runner-up 3,800; 32 slots; free entry; registration 20 Nov to 1 Dec. Post link not given yet (poster opens larger instead).
 - LW Magic Chess Nation Cup Season 01 (MLBB Magic Chess), posted 25 Aug 2021, with BD Coins; prizes 1,100/900/600 diamonds, 4th-8th 79 each; 128 slots; free; registration 25-29 Aug; post share/p/1D1AxS25nU.
 - MLBB Cosplay Competition (gaming cosplay contest, poster branded Lazzy Plays): winners announced live on Lazzy Winners 10 August at 2 pm; year not given; post share/p/1DyLiF3veF.
+- Queens of MLBB: 4v4 brawl, girl gamers only, presented by Mobile Legends: Bang Bang Official Bangladesh (poster branded Lazzy Plays); winner 2,000 diamonds, runner-up 1,000; free; registration from 25 May; year not given; post share/p/1JNtajHqqc.
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
