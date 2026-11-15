@@ -104,6 +104,45 @@
     });
   });
 
+  // ---------- Year-by-year story (one year at a time) ----------
+  document.querySelectorAll('[data-years]').forEach(function (root) {
+    var btns = Array.prototype.slice.call(root.querySelectorAll('[data-year]'));
+    var chapters = root.querySelectorAll('[data-chapter]');
+    var cur = 0;
+    function show(i) {
+      cur = Math.max(0, Math.min(btns.length - 1, i));
+      var y = btns[cur].getAttribute('data-year');
+      btns.forEach(function (b, k) { b.setAttribute('aria-pressed', k === cur ? 'true' : 'false'); });
+      chapters.forEach(function (c) { c.classList.toggle('active', c.getAttribute('data-chapter') === y); });
+      btns[cur].scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    }
+    btns.forEach(function (b, i) { b.addEventListener('click', function () { show(i); }); });
+    root.querySelectorAll('[data-year-step]').forEach(function (b) {
+      b.addEventListener('click', function () { show(cur + parseInt(b.getAttribute('data-year-step'), 10)); });
+    });
+  });
+
+  // ---------- Photo zoom for story pictures ----------
+  var zoomers = document.querySelectorAll('[data-zoom]');
+  if (zoomers.length) {
+    var zb = document.createElement('div');
+    zb.className = 'modal';
+    zb.setAttribute('role', 'dialog');
+    zb.setAttribute('aria-modal', 'true');
+    zb.innerHTML = '<div class="sheet" style="width:min(1000px,100%);padding:16px"><button class="key icon x" type="button" data-close aria-label="Close" style="z-index:2">✕</button><img alt="" style="width:100%;max-height:76vh;object-fit:contain;border-radius:12px;background:#000"><p style="margin:12px 4px 0;color:var(--text);font-weight:600"></p></div>';
+    document.body.appendChild(zb);
+    zb.addEventListener('click', function (e) { if (e.target === zb || e.target.closest('[data-close]')) { zb.classList.remove('open'); lock(false); } });
+    zoomers.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var im = b.querySelector('img');
+        zb.querySelector('img').src = b.getAttribute('data-zoom');
+        zb.querySelector('img').alt = im ? im.alt : '';
+        zb.querySelector('p').textContent = im ? im.alt : '';
+        zb.classList.add('open'); lock(true);
+      });
+    });
+  }
+
   // ---------- Depth carousel ----------
   document.querySelectorAll('[data-look]').forEach(initLook);
 

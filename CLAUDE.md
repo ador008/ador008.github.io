@@ -4,8 +4,8 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 
 ## Structure
 - `index.html`: simple homepage (intro, About/Contact pop-ups, two section cards).
-- `education.html`: Education & CV, pill tabs: Studies, Projects, Achievements, Skills, plus "Save CV as PDF" (print stylesheet).
-- `esports.html`: pill tabs: Highlights (depth photo carousel), Career, Achievements, Skills.
+- `personal.html`: Personal details (for cybersecurity job applications, and the source for his CV). Tabs: Profile, Education, Experience, Projects, Skills, Certificates, plus "Save CV as PDF" (print stylesheet). `education.html` redirects here.
+- `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Teams, Skills. Goal: every esports story and achievement with its year.
 - `achievement.html`: redirect to `esports.html`. Keep it: the proposal PDF links to it.
 - `css/style.css`: all styles, colour tokens at the top (dark default, `[data-theme="light"]` overrides).
 - `js/main.js`: theme toggle, menu, pop-ups, tabs, carousel, View all, lightbox, print.
@@ -32,4 +32,5 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Environment: skills.sh and zabulanakakil.github.io are allowed hosts; Canva connector works; find-skills is installed by the environment setup script; Ador enabled the frontend-design skill (load it for design work).
 
 ## Content still needed from Ador
+Esports: missing years (2018 to 2021, 2024 to 2025), other titles and placements with years, years per team and in-game role. Personal details: languages, work experience, certificates/courses, more projects.
 Technical skills, BSc university name and years, MSc dates, academic achievements, other projects, work experience, languages, team years and in-game roles, who won MVP in photo acv06.
