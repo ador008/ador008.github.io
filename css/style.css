@@ -98,8 +98,8 @@ main{flex:1}
 .path h3{color:#fff;font-size:clamp(2rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
 .path p{color:#d4d4d4;max-width:440px;margin-bottom:18px}
 .path .key{align-self:flex-start}
-.path-edu .bg{background-image:linear-gradient(135deg,rgba(120,8,28,.55),rgba(10,10,10,.35)),url(../images/learning-hub.jpg);background-position:left top}
-.path-es .bg{background-image:url(../images/acv03.jpg)}
+.path-edu .bg{background-image:linear-gradient(135deg,rgba(120,8,28,.35),rgba(10,10,10,.1)),url(../images/portrait-coat.jpg);background-position:50% 20%}
+.path-es .bg{background-image:url(../images/kingsmen-d1-cup.jpg);background-position:50% 25%}
 
 /* ---------- section pages ---------- */
 .page-head{padding:44px 0 8px}
@@ -395,7 +395,9 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .idlist div{grid-template-columns:96px minmax(0,1fr)}
   .idcard{display:block}
   .idcard img{height:auto;aspect-ratio:16/11;object-position:50% 30%}
-  .path{min-height:260px}
+  .path{min-height:420px}
+  .path-edu .bg{background-position:50% 12%}
+  .path-es .bg{background-position:50% 8%}
   .tl li{grid-template-columns:1fr;gap:2px}
   .slide{width:72%}
   .pill{height:2.9rem;padding:0 1.2rem;font-size:.98rem}
