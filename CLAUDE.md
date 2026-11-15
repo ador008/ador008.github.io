@@ -41,6 +41,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier and went to Nepal for the main event. Post: share/p/152EapeM9ZL. Year and result in Nepal not given yet.
 - His gaming Facebook page is "Lazzy Winners" (share/1JjWPBxP6Y), linked from the homepage, contact pop-up and footer. Ador is collecting screenshots of tournaments he hosted there (Facebook is not readable from this environment).
 - Hosted on Lazzy Winners: Grimlock Battle, Roger 1v1 (MLBB), posted 24 Mar 2023, free entry with Grimlock skin, prize pool BDT 1,500, registration 25-28 March, post share/p/1F1kUBCtEf. Brawl Legends, 4v4 brawl (MLBB), posted 6 Mar 2023, prize pool BDT 2,000, registration opened 6 March, post share/p/1E3YbmeKVw (poster spells it "Brawl Lagends"; a later post mentioned its top 8 teams).
+- GenJam Season 01: 5v5 draft pick fun tournament, mid-lane heroes only (MLBB), posted 22 Nov 2021 by Niaz Nur, co-hosted with itzDiablo and Carnival Of Ashes; winner 4,500 diamonds, runner-up 3,800; 32 slots; free entry; registration 20 Nov to 1 Dec. Post link not given yet (poster opens larger instead).
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador
