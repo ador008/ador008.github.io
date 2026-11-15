@@ -303,6 +303,16 @@ h4{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01
 .btn-cv{background:transparent;border-color:var(--line);color:var(--ink)}
 .btn-cv:hover{background:var(--ink);border-color:var(--ink);color:#fff}
 
+/* ---------- multi-page layout ---------- */
+.hero{padding-bottom:88px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:30px}
+.page-hero .subnav a{background:var(--ink2);border-color:var(--ink3);color:#C9CEDB}
+.page-hero .subnav a:hover,.page-hero .subnav a.active{border-color:var(--gold);color:var(--gold)}
+.page-track{padding-top:24px}
+.links a.current:not(.btn){color:#fff}
+.links a.current:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--red);border-radius:2px}
+.print-only{display:none}
+
 /* ---------- print: clean CV ---------- */
 @media print{
   @page{margin:16mm 14mm}
@@ -332,6 +342,12 @@ h4{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.01
   .reveal{opacity:1!important;transform:none!important}
   a{text-decoration:none;color:#000}
   .eyebrow{color:#C8102E!important}
+  .page-hero{display:none!important}
+  .print-only{display:block!important}
+  .print-head{border-bottom:2px solid #C8102E;padding-bottom:8pt;margin-bottom:6pt}
+  .print-head h1{font-size:24pt;margin-bottom:4pt}
+  .print-head p{font-size:10pt;color:#222}
+  .page-track{padding-top:0!important}
 }
 
 /* reveal */
