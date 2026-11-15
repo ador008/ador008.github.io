@@ -38,7 +38,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Venom Esports was covered in Jugantor (national daily): Dhaka division final of the Arena of Valor Bangladesh Championship at Jamuna Future Park, BDT 25 lakh prize pool. Ador is third from the left in the photo. Ador called it the semi-final match; confirm wording.
 - D1 Cup (MLBB): runner-up with his own team KINGSMEN (jersey says SGC Kingsmen). His last tournament in Bangladesh before moving to Denmark to study. Year not given yet: shown as "Year to add"; add to the Story tab once known.
 - BASIS Esports Championship 2023: Red Viperz (RV Gaming) champions, BDT 40,000; same team played IESF. Red Viperz post: share/18oXTTXFjQ (poster image redviperz-basis-2023.jpg). Poster lists Xecution, Raeburn, Blaze, Serjjj, K7, Mr.Rey: ask which name was Ador's.
-- Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier and went to Nepal for the main event. Year, result in Nepal and post link not given yet.
+- Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier and went to Nepal for the main event. Post: share/p/152EapeM9ZL. Year and result in Nepal not given yet.
 - Ador is collecting screenshots of tournaments he hosted on his gaming Facebook page (Facebook is not readable from this environment).
 - Images that have a source post link to that post when clicked.
 
