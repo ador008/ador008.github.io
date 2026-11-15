@@ -9,57 +9,86 @@
   <meta property="og:description" content="The esports career of Ador Chowdhury: Mobile Legends player since 2017, Team Bangladesh captain at the IESF Asia Qualifier 2023, champion, shoutcaster and organizer.">
   <meta property="og:image" content="https://ador008.github.io/images/acv01.jpg">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Barlow+Condensed:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="es-page">
+<header class="site-header">
+  <div class="container header-in">
+    <a class="brand" href="index.html"><img src="images/avatar.jpg" alt="" width="46" height="46"><span><b>Ador Chowdhury</b><small>Cybersecurity &amp; Esports</small></span></a>
+    <div class="header-end">
+      <nav class="nav" aria-label="Main"><a class="key" href="index.html">Home</a><a class="key" href="education.html">Education &amp; CV</a><a class="key is-active" href="esports.html" aria-current="page">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
+      <button class="key icon theme-toggle" type="button" aria-label="Switch light or dark theme"><span class="moon"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sun"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
+      <button class="key icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Menu"><a class="key" href="index.html">Home</a><a class="key" href="education.html">Education &amp; CV</a><a class="key is-active" href="esports.html" aria-current="page">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
 
-<div class="page dark">
-  <header class="topbar">
-    <a class="home-link" href="index.html"><img src="images/avatar.jpg" alt=""><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Ador Chowdhury</a>
-    <a class="switch" href="education.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg><span>Go to </span>Education &amp; CV</a>
-  </header>
-
-  <section class="phead">
-    <span class="label">02 · Esports</span>
-    <h1>Player, captain, caster, organizer</h1>
+<main class="container">
+  <section class="page-head">
+    <a class="crumb" href="index.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Home</a>
+    <h1>Esports career</h1>
     <p>Competing in Mobile Legends: Bang Bang since 2017, captain of Team Bangladesh in 2023, and now building mobile esports in Denmark.</p>
-    <div class="tabs" role="tablist" aria-label="Esports sections">
-      <button class="tab" role="tab" id="t-overview" aria-controls="overview"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></svg>Overview</button>
-      <button class="tab" role="tab" id="t-career" aria-controls="career"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M9 5h8.5a1 1 0 010 7h-11a1 1 0 000 7H15" /><circle cx="18" cy="19" r="3" /><circle cx="6" cy="5" r="3" /></svg>Career</button>
-      <button class="tab" role="tab" id="t-achievements" aria-controls="achievements"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg>Achievements</button>
-      <button class="tab" role="tab" id="t-photos" aria-controls="photos"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>Photos</button>
-      <button class="tab" role="tab" id="t-skills" aria-controls="skills"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></svg>Skills</button>
+    <ul class="mini-stats">
+      <li><b>2017</b> started competing</li>
+      <li><b>Captain</b> Team Bangladesh 2023</li>
+      <li><b>2 titles</b> with Red Viperz</li>
+      <li><b>Founder</b> Mobile Esports Denmark</li>
+    </ul>
+    <div class="pills" role="tablist" aria-label="Esports sections">
+      <button class="pill" role="tab" id="t-highlights" aria-controls="highlights">Highlights</button>
+      <button class="pill" role="tab" id="t-career" aria-controls="career">Career</button>
+      <button class="pill" role="tab" id="t-achievements" aria-controls="achievements">Achievements</button>
+      <button class="pill" role="tab" id="t-skills" aria-controls="skills">Skills</button>
     </div>
   </section>
 
-  <main class="panels">
-    <section class="panel" role="tabpanel" id="overview" aria-labelledby="t-overview">
-      <div class="ov">
-        <a class="ov-photo" href="#photos" data-tab="photos"><img src="images/acv01.jpg" alt="Red Viperz, MLBB champions at the BASIS Esports Championship 2023"><span>Champions · BASIS Esports Championship 2023</span></a>
+  <div class="panels">
+    <section class="panel" role="tabpanel" id="highlights" aria-labelledby="t-highlights">
+      <h2>Highlights</h2>
+      <p class="sub">Drag or swipe through the photos. The card describes the one in the centre.</p>
+      <div class="look" data-look>
         <div>
-          <div class="stats">
-            <div class="stat"><b>2017</b><span>Competing in Mobile Legends since</span></div>
-            <div class="stat"><b>Captain</b><span>Team Bangladesh, IESF Asia Qualifier 2023</span></div>
-            <div class="stat"><b>2 titles</b><span>IESF Bangladesh qualifier and BASIS Championship</span></div>
-            <div class="stat"><b>Founder</b><span>Mobile Esports Denmark</span></div>
+          <div class="stage" tabindex="0" aria-roledescription="carousel" aria-label="Esports photos">
+        <figure class="slide" data-title="Champions: Red Viperz" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="The official champion announcement: Red Viperz won the Mobile Legends: Bang Bang title and the BDT 40,000 prize." data-href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol" data-link="Read the announcement"><img src="images/acv01.jpg" alt="Champions: Red Viperz, BASIS Esports Championship 2023" draggable="false"></figure>
+        <figure class="slide" data-title="The trophy moment" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="Red Viperz receiving the champion cheque on the main stage." data-href="https://drive.google.com/file/d/1oxl0yJjd2HOoyHW9ZpKX5ckfJlUM8xGV/view?usp=drive_link" data-link="Open original photo"><img src="images/acv10.jpg" alt="The trophy moment, BASIS Esports Championship 2023" draggable="false"></figure>
+        <figure class="slide" data-title="The squad at the venue" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="The Red Viperz team together at the championship venue." data-href="https://drive.google.com/file/d/1QGpuXB7TH1_laEqkmPDiCwca63aNJWMI/view?usp=drive_link" data-link="Open original photo"><img src="images/acv03.jpg" alt="The squad at the venue, BASIS Esports Championship 2023" draggable="false"></figure>
+        <figure class="slide" data-title="Ready to compete" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="Team photo at the venue before taking the stage." data-href="https://drive.google.com/file/d/1wRLQmm6zL7cJwHxyfbzE-M-h2Jl_233C/view?usp=drive_link" data-link="Open original photo"><img src="images/acv04.jpg" alt="Ready to compete, BASIS Esports Championship 2023" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="All the winners on stage" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="The prize-winners together on stage with their MVP and champion cheques." data-href="https://drive.google.com/file/d/1s47Tk6eoRaZ1W589xPBoPASWu6C6xpWH/view?usp=drive_link" data-link="Open original photo"><img src="images/acv05.jpg" alt="All the winners on stage, BASIS Esports Championship 2023" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="MVP and champion cheques" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="The MVP award (BDT 10,000) next to the champion cheque (BDT 40,000)." data-href="https://drive.google.com/file/d/1itYdLiugj9isMOL5diUvoAvW63KglTIe/view?usp=drive_link" data-link="Open original photo"><img src="images/acv06.jpg" alt="MVP and champion cheques, BASIS Esports Championship 2023" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="Holding the champion cheque" data-event="BASIS Esports Championship 2023" data-date="February 2023" data-tag="Champion" data-note="A proud moment with the BDT 40,000 champion cheque." data-href="https://drive.google.com/file/d/1SS7yP7guCWfJcYQPVQ4lPQIzSItNXMHQ/view?usp=drive_link" data-link="Open original photo"><img src="images/acv02.jpg" alt="Holding the champion cheque, BASIS Esports Championship 2023" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="1st runner-up award" data-event="IUB Gaming Fest" data-date="December 2022" data-tag="1st runner-up" data-note="Receiving the 1st runner-up award (BDT 10,000) in the Mobile Legends: Bang Bang tournament." data-href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769" data-link="See the post"><img src="images/acv08.jpg" alt="1st runner-up award, IUB Gaming Fest" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="Team photo with the award" data-event="IUB Gaming Fest" data-date="December 2022" data-tag="1st runner-up" data-note="The team with the 1st runner-up board after the final." data-href="https://drive.google.com/file/d/1qFNICIibwPvgIvYBjwZaTYHs_phg78Ht/view?usp=drive_link" data-link="Open original photo"><img src="images/acv07.jpg" alt="Team photo with the award, IUB Gaming Fest" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="Closing ceremony" data-event="IUB Gaming Fest" data-date="December 2022" data-tag="1st runner-up" data-note="All the IUB Gaming Fest prize-winners together at the closing ceremony." data-href="https://drive.google.com/file/d/1yk-zDy3cWJT3tdSFQTKBM0WYiz8FmxSL/view?usp=drive_link" data-link="Open original photo"><img src="images/acv11.jpg" alt="Closing ceremony, IUB Gaming Fest" draggable="false" loading="lazy"></figure>
+        <figure class="slide" data-title="In the newspaper" data-event="IUB Gaming Fest" data-date="December 2022" data-tag="1st runner-up" data-note="Newspaper coverage of the IUB esports tournament." data-href="https://drive.google.com/file/d/1_LyVGKA7_aNKKTSiHi3SczaDctTb1Kla/view?usp=drive_link" data-link="Open original photo"><img src="images/acv09.jpg" alt="In the newspaper, IUB Gaming Fest" draggable="false"></figure>
+        <figure class="slide" data-title="On the casting desk" data-event="Angular Eid Invitational" data-date="May 2022" data-tag="Shoutcaster" data-note="Official shoutcaster for the Mobile Legends: Bang Bang Eid Invitational broadcast." data-href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl" data-link="See the post"><img src="images/acv12.jpg" alt="On the casting desk, Angular Eid Invitational" draggable="false"></figure>
+            <div class="view-cursor" hidden>VIEW</div>
           </div>
-          <ul class="roles">
-            <li><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m13 19 6-6" /><path d="M14.5 17.5 3.586 6.586A2 2 0 013 5.172V3h2.172a2 2 0 011.414.586L17.5 14.5" /><path d="m14.828 6.172 2.586-2.586A2 2 0 0118.828 3H21v2.172a2 2 0 01-.586 1.414l-2.586 2.586" /><path d="m16 16 4 4" /><path d="m19 21 2-2" /><path d="m5 14 4 4" /><path d="m5 21-2-2" /><path d="M7.5 16.5 4 20" /></svg>Player</li>
-            <li><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528" /></svg>National team captain</li>
-            <li><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg>Shoutcaster</li>
-            <li><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M8 2v3" /><path d="M16 2v3" /><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18" /><path d="m9 15 2 2 4-4" /></svg>Organizer</li>
-          </ul>
+          <div class="scrubber"><div class="ticks" aria-hidden="true"></div><input class="range" type="range" min="0" value="0" step="1" aria-label="Choose a photo"></div>
+          <div class="look-actions"><button class="key" type="button" data-prev aria-label="Previous photo"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg></button><button class="key" type="button" data-next aria-label="Next photo"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></button><button class="key" type="button" data-viewall><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1" /><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /></svg><span>View all (<span data-total></span>)</span></button></div>
+        </div>
+        <aside class="look-panel" aria-live="polite">
+          <div class="k"><span>In this photo</span><span class="count"></span></div>
+          <div class="look-body"></div>
+        </aside>
+      </div>
+      <div class="flood" role="dialog" aria-modal="true" aria-label="All photos">
+        <div class="flood-back" data-close-flood></div>
+        <div class="flood-panel">
+          <div class="flood-head"><h3>All photos (<span data-total></span>)</h3><button class="key icon" type="button" data-close-flood aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button></div>
+          <div class="flood-grid"></div>
         </div>
       </div>
     </section>
 
     <section class="panel" role="tabpanel" id="career" aria-labelledby="t-career">
-      <h2 class="panel-title">Career</h2>
-      <p class="panel-sub">From competitive player to national captain and community founder.</p>
+      <h2>Career</h2><p class="sub">From competitive player to national captain and community founder.</p>
       <ol class="tl">
         <li><div class="when">2026</div><div><h3>Founder, Mobile Esports Denmark<span class="now">Now</span></h3><p class="org">Copenhagen, Denmark</p><p>A community for Danish mobile players with a Discord server, a Facebook page and online tournaments, starting with the eFootball Community Cup DK.</p></div></li>
         <li><div class="when">2023</div><div><h3>Captain, Team Bangladesh</h3><p class="org">IESF Asia Qualifier, Saudi Arabia</p><p>Selected after my team Red Viperz won the IESF 2023 Bangladesh qualifier (MLBB).</p></div></li>
@@ -69,56 +98,64 @@
     </section>
 
     <section class="panel" role="tabpanel" id="achievements" aria-labelledby="t-achievements">
-      <h2 class="panel-title">Achievements</h2>
-      <p class="panel-sub">Titles, placements and broadcast roles.</p>
+      <h2>Achievements</h2><p class="sub">Titles, placements and broadcast roles.</p>
       <ul class="ach">
-        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, IESF 2023 Bangladesh qualifier</h3><small>2023 · Red Viperz · MLBB</small><a href="https://liquipedia.net/mobilelegends/IESF/World_Esports_Championships/2023/Bangladesh_Qualifiers">Results on Liquipedia <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, BASIS Esports Championship</h3><small>February 2023 · Red Viperz · MLBB</small><a href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol">Announcement <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal silver"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><div><h3>1st runner-up, IUB Gaming Fest</h3><small>December 2022 · MLBB</small><a href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
-        <li><span class="medal"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><h3>Official shoutcaster, Angular Eid Invitational</h3><small>May 2022 · MLBB</small><a href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="14"height="14"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
+        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, IESF 2023 Bangladesh qualifier</h3><small>2023 · Red Viperz · MLBB</small><a class="link" href="https://liquipedia.net/mobilelegends/IESF/World_Esports_Championships/2023/Bangladesh_Qualifiers">Results on Liquipedia <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
+        <li><span class="medal gold"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></span><div><h3>Champion, BASIS Esports Championship</h3><small>February 2023 · Red Viperz · MLBB</small><a class="link" href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol">Announcement <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
+        <li><span class="medal silver"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" /><path d="M11 12 5.12 2.2" /><path d="m13 12 5.88-9.8" /><path d="M8 7h8" /><circle cx="12" cy="17" r="5" /><path d="M12 18v-2h-.5" /></svg></span><div><h3>1st runner-up, IUB Gaming Fest</h3><small>December 2022 · MLBB</small><a class="link" href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
+        <li><span class="medal"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="22"height="22"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg></span><div><h3>Official shoutcaster, Angular Eid Invitational</h3><small>May 2022 · MLBB</small><a class="link" href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl">See the post <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="15"height="15"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a></div></li>
       </ul>
     </section>
 
-    <section class="panel" role="tabpanel" id="photos" aria-labelledby="t-photos">
-      <h2 class="panel-title">Photos</h2>
-      <p class="panel-sub">Click a photo to see it larger.</p>
-      <div class="filters" role="group" aria-label="Filter photos">
-        <button class="filter on" type="button" data-filter="all">All</button>
-        <button class="filter" type="button" data-filter="basis">BASIS Championship</button>
-        <button class="filter" type="button" data-filter="iub">IUB Gaming Fest</button>
-        <button class="filter" type="button" data-filter="cast">Casting</button>
-      </div>
-      <div class="grid">
-        <a data-group="basis" href="https://www.facebook.com/angularesports/posts/pfbid02oMjmxJezu23fEQtFndNKgobmC66jsAU2XN5b6kg5jf8KMtmgMKCXav3BySpSuBnol"><img src="images/acv01.jpg" alt="Champions, BASIS Esports Championship 2023" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1oxl0yJjd2HOoyHW9ZpKX5ckfJlUM8xGV/view?usp=drive_link"><img src="images/acv10.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1QGpuXB7TH1_laEqkmPDiCwca63aNJWMI/view?usp=drive_link"><img src="images/acv03.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1wRLQmm6zL7cJwHxyfbzE-M-h2Jl_233C/view?usp=drive_link"><img src="images/acv04.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="iub" href="https://www.facebook.com/photo/?fbid=212697224473461&amp;set=pcb.212697477806769"><img src="images/acv08.jpg" alt="1st runner-up, IUB Gaming Fest" loading="lazy"><span>IUB Gaming Fest</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1s47Tk6eoRaZ1W589xPBoPASWu6C6xpWH/view?usp=drive_link"><img src="images/acv05.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="cast" href="https://www.facebook.com/ador.crystalz/posts/pfbid0Fw2KHUJqX4y22TaeyKUXy8oNgokQ8GbPbhc9jjqkie73oUuKz5wJKJPBvNud7NHcl"><img src="images/acv12.jpg" alt="Shoutcasting, Angular Eid Invitational" loading="lazy"><span>Angular Eid Invitational</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1SS7yP7guCWfJcYQPVQ4lPQIzSItNXMHQ/view?usp=drive_link"><img src="images/acv02.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="iub" href="https://drive.google.com/file/d/1qFNICIibwPvgIvYBjwZaTYHs_phg78Ht/view?usp=drive_link"><img src="images/acv07.jpg" alt="IUB Gaming Fest" loading="lazy"><span>IUB Gaming Fest</span></a>
-        <a data-group="basis" href="https://drive.google.com/file/d/1itYdLiugj9isMOL5diUvoAvW63KglTIe/view?usp=drive_link"><img src="images/acv06.jpg" alt="BASIS Esports Championship" loading="lazy"><span>BASIS Championship</span></a>
-        <a data-group="iub" href="https://drive.google.com/file/d/1yk-zDy3cWJT3tdSFQTKBM0WYiz8FmxSL/view?usp=drive_link"><img src="images/acv11.jpg" alt="IUB Gaming Fest" loading="lazy"><span>IUB Gaming Fest</span></a>
-        <a data-group="iub" href="https://drive.google.com/file/d/1_LyVGKA7_aNKKTSiHi3SczaDctTb1Kla/view?usp=drive_link"><img src="images/acv09.jpg" alt="IUB Gaming Fest newspaper coverage" loading="lazy"><span>IUB Gaming Fest</span></a>
-      </div>
-    </section>
-
     <section class="panel" role="tabpanel" id="skills" aria-labelledby="t-skills">
-      <h2 class="panel-title">Esports skills</h2>
-      <p class="panel-sub">What I bring to a team, an event or a community.</p>
+      <h2>Esports skills</h2><p class="sub">What I bring to a team, an event or a community.</p>
       <div class="sk">
-        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m13 19 6-6" /><path d="M14.5 17.5 3.586 6.586A2 2 0 013 5.172V3h2.172a2 2 0 011.414.586L17.5 14.5" /><path d="m14.828 6.172 2.586-2.586A2 2 0 0118.828 3H21v2.172a2 2 0 01-.586 1.414l-2.586 2.586" /><path d="m16 16 4 4" /><path d="m19 21 2-2" /><path d="m5 14 4 4" /><path d="m5 21-2-2" /><path d="M7.5 16.5 4 20" /></svg>Competition</h3><ul class="chips"><li>Team leadership</li><li>Talent scouting</li></ul></div>
-        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg>Events &amp; broadcast</h3><ul class="chips"><li>Tournament operations</li><li>Brackets &amp; rules</li><li>Shoutcasting</li><li>Live streaming</li></ul></div>
-        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>Community &amp; marketing</h3><ul class="chips"><li>Community building</li><li>Discord &amp; Facebook</li><li>Social media</li><li>Paid ads</li><li>International relations</li></ul></div>
+        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m13 19 6-6" /><path d="M14.5 17.5 3.586 6.586A2 2 0 013 5.172V3h2.172a2 2 0 011.414.586L17.5 14.5" /><path d="m14.828 6.172 2.586-2.586A2 2 0 0118.828 3H21v2.172a2 2 0 01-.586 1.414l-2.586 2.586" /><path d="m16 16 4 4" /><path d="m19 21 2-2" /><path d="m5 14 4 4" /><path d="m5 21-2-2" /><path d="M7.5 16.5 4 20" /></svg>Competition</h3><ul class="chips"><li>Team leadership</li><li>Talent scouting</li></ul></div>
+        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 19v3" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><rect x="9" y="2" width="6" height="13" rx="3" /></svg>Events &amp; broadcast</h3><ul class="chips"><li>Tournament operations</li><li>Brackets &amp; rules</li><li>Shoutcasting</li><li>Live streaming</li></ul></div>
+        <div><h3><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><path d="M16 3.128a4 4 0 0 1 0 7.744" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><circle cx="9" cy="7" r="4" /></svg>Community &amp; marketing</h3><ul class="chips"><li>Community building</li><li>Discord &amp; Facebook</li><li>Social media</li><li>Paid ads</li><li>International relations</li></ul></div>
       </div>
     </section>
-  </main>
-
-  <footer class="foot">
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container foot-in">
     <span>© <span class="year">2026</span> Ador Chowdhury</span>
-    <span><a href="mailto:ador8210@gmail.com">ador8210@gmail.com</a> · <a href="https://www.linkedin.com/in/ador-chowdhury-643596305">LinkedIn</a> · <a href="https://github.com/ador008">GitHub</a></span>
-  </footer>
+    <nav aria-label="Social"><a href="https://www.linkedin.com/in/ador-chowdhury-643596305">LinkedIn</a><a href="https://github.com/ador008">GitHub</a><a href="https://www.facebook.com/ador.crystalz">Facebook</a><a href="mailto:ador8210@gmail.com">Email</a></nav>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/4591618028" aria-label="Chat on WhatsApp"><svg aria-hidden="true" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a>
+
+<div class="modal" id="about" role="dialog" aria-modal="true" aria-labelledby="about-t">
+  <div class="sheet">
+    <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+    <span class="kicker">About me</span>
+    <h2 id="about-t">Technology and competition, one mindset</h2>
+    <p>I'm a Computer Science &amp; Engineering graduate, now doing an MSc in Cybersecurity at Aalborg University Copenhagen. Alongside my studies, I have spent years in competitive esports as a player, team captain, shoutcaster and tournament organizer.</p>
+    <p>I have played Mobile Legends: Bang Bang since 2017, and in 2023 I captained Team Bangladesh at the IESF Asia Qualifier in Saudi Arabia. Today I live in Denmark, where I'm building a home for mobile esports through Mobile Esports Denmark.</p>
+    <dl class="facts">
+      <div><dt>Based in</dt><dd>Copenhagen, Denmark</dd></div>
+      <div><dt>From</dt><dd>Bangladesh</dd></div>
+      <div><dt>Studying</dt><dd>MSc Cybersecurity, AAU</dd></div>
+      <div><dt>Esports</dt><dd>MLBB since 2017</dd></div>
+    </dl>
+    <p class="quote">“A person trying to learn new things every day, who wants to create a world without selfishness.”</p>
+  </div>
+</div>
+<div class="modal" id="contact" role="dialog" aria-modal="true" aria-labelledby="contact-t">
+  <div class="sheet">
+    <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+    <span class="kicker">Contact</span>
+    <h2 id="contact-t">Let's talk</h2>
+    <p>Open to cybersecurity opportunities, esports projects and collaborations.</p>
+    <div class="rows">
+      <a href="mailto:ador8210@gmail.com"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span><small>Email</small><b>ador8210@gmail.com</b></span></a>
+      <a href="tel:+4591618028"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></span><span><small>Phone</small><b>+45 91 61 80 28</b></span></a>
+      <a href="https://wa.me/4591618028"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span><span><small>WhatsApp</small><b>Chat on WhatsApp</b></span></a>
+      <a href="https://www.linkedin.com/in/ador-chowdhury-643596305"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg></span><span><small>LinkedIn</small><b>ador-chowdhury</b></span></a>
+      <a href="https://github.com/ador008"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg></span><span><small>GitHub</small><b>ador008</b></span></a>
+      <div><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><span><small>Address</small><b>Værebrovej 8, 2880 Bagsværd, Denmark</b></span></div>
+    </div>
+  </div>
 </div>
 <script src="js/main.js"></script>
 </body>

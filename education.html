@@ -9,84 +9,119 @@
   <meta property="og:description" content="Education, projects, achievements and technical skills of Ador Chowdhury, MSc Cybersecurity student at Aalborg University Copenhagen.">
   <meta property="og:image" content="https://ador008.github.io/images/avatar.jpg">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Barlow+Condensed:wght@500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="edu-page">
+<header class="site-header">
+  <div class="container header-in">
+    <a class="brand" href="index.html"><img src="images/avatar.jpg" alt="" width="46" height="46"><span><b>Ador Chowdhury</b><small>Cybersecurity &amp; Esports</small></span></a>
+    <div class="header-end">
+      <nav class="nav" aria-label="Main"><a class="key" href="index.html">Home</a><a class="key is-active" href="education.html" aria-current="page">Education &amp; CV</a><a class="key" href="esports.html">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
+      <button class="key icon theme-toggle" type="button" aria-label="Switch light or dark theme"><span class="moon"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg></span><span class="sun"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></span></button>
+      <button class="key icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Menu"><a class="key" href="index.html">Home</a><a class="key is-active" href="education.html" aria-current="page">Education &amp; CV</a><a class="key" href="esports.html">Esports</a><button class="key" type="button" data-open="contact">Contact</button></nav>
 
-<div class="page">
-  <header class="topbar">
-    <a class="home-link" href="index.html"><img src="images/avatar.jpg" alt=""><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Ador Chowdhury</a>
-    <a class="switch" href="esports.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg><span>Go to </span>Esports</a>
-  </header>
-
+<main class="container">
   <div class="print-head">
     <h1>Ador Chowdhury</h1>
     <p>MSc Cybersecurity student, Aalborg University Copenhagen · Former Team Bangladesh esports captain</p>
     <p>ador8210@gmail.com · +45 91 61 80 28 · linkedin.com/in/ador-chowdhury-643596305 · Copenhagen, Denmark</p>
   </div>
-
-  <section class="phead">
-    <span class="label">01 · Education &amp; CV</span>
-    <div class="phead-row">
+  <section class="page-head">
+    <a class="crumb" href="index.html"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>Home</a>
+    <div class="page-head-row">
       <div>
-        <h1>Education &amp; Technology</h1>
+        <h1>Education &amp; CV</h1>
         <p>From a Computer Science &amp; Engineering degree in Bangladesh to an MSc in Cybersecurity in Copenhagen.</p>
       </div>
-      <button class="btn" type="button" data-print><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M12 18v-6" /><path d="m9 15 3 3 3-3" /></svg>Save CV as PDF</button>
+      <button class="key primary lg" type="button" data-print><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /><path d="M14 2v5a1 1 0 0 0 1 1h5" /><path d="M12 18v-6" /><path d="m9 15 3 3 3-3" /></svg>Save CV as PDF</button>
     </div>
-    <div class="tabs" role="tablist" aria-label="Education sections">
-      <button class="tab" role="tab" id="t-studies" aria-controls="studies"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>Studies</button>
-      <button class="tab" role="tab" id="t-projects" aria-controls="projects"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m16 18 6-6-6-6" /><path d="m8 6-6 6 6 6" /></svg>Projects</button>
-      <button class="tab" role="tab" id="t-achievements" aria-controls="achievements"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /><circle cx="12" cy="8" r="6" /></svg>Achievements</button>
-      <button class="tab" role="tab" id="t-skills" aria-controls="skills"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="17"height="17"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M12 20v2" /><path d="M12 2v2" /><path d="M17 20v2" /><path d="M17 2v2" /><path d="M2 12h2" /><path d="M2 17h2" /><path d="M2 7h2" /><path d="M20 12h2" /><path d="M20 17h2" /><path d="M20 7h2" /><path d="M7 20v2" /><path d="M7 2v2" /><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /></svg>Skills</button>
+    <div class="pills" role="tablist" aria-label="Education sections">
+      <button class="pill" role="tab" id="t-studies" aria-controls="studies">Studies</button>
+      <button class="pill" role="tab" id="t-projects" aria-controls="projects">Projects</button>
+      <button class="pill" role="tab" id="t-achievements" aria-controls="achievements">Achievements</button>
+      <button class="pill" role="tab" id="t-skills" aria-controls="skills">Skills</button>
     </div>
   </section>
 
-  <main class="panels">
+  <div class="panels">
     <section class="panel" role="tabpanel" id="studies" aria-labelledby="t-studies">
-      <h2 class="panel-title">Studies</h2>
-      <p class="panel-sub">My academic path so far.</p>
+      <h2>Studies</h2><p class="sub">My academic path so far.</p>
       <ol class="tl">
         <li><div class="when">Current</div><div><h3>MSc in Cybersecurity<span class="now">Now</span></h3><p class="org">Aalborg University Copenhagen, Denmark</p></div></li>
         <li><div class="when">Graduated</div><div><h3>BSc in Computer Science &amp; Engineering</h3><p class="org">Bangladesh</p><p>Final-year project: Learning Hub, an e-learning platform for National University students.</p></div></li>
       </ol>
     </section>
-
     <section class="panel" role="tabpanel" id="projects" aria-labelledby="t-projects">
-      <h2 class="panel-title">Projects</h2>
-      <p class="panel-sub">Things I have built.</p>
-      <article class="proj">
+      <h2>Projects</h2><p class="sub">Things I have built.</p>
+      <article class="card proj">
         <div class="proj-img"><img src="images/learning-hub.jpg" alt="Learning Hub website screenshot" width="1270" height="507" loading="lazy"></div>
         <div class="proj-body">
-          <span class="label">July 2023 · Final-year project</span>
+          <span class="meta">July 2023 · Final-year project</span>
           <h3>Learning Hub</h3>
           <p>A free e-learning platform for National University students. Courses are organised by semester, with exam question collections, answers as PDF files and video tutorials, plus a community section where students share thoughts and feedback.</p>
-          <a class="link" href="https://github.com/ador008/Learning-Hub/tree/main/hub">View code on GitHub <svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="16"height="16"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></a>
+          <a class="key" href="https://github.com/ador008/Learning-Hub/tree/main/hub"><svg aria-hidden="true" width="17" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>View code</a>
         </div>
       </article>
     </section>
-
     <section class="panel" role="tabpanel" id="achievements" aria-labelledby="t-achievements">
-      <h2 class="panel-title">Achievements</h2>
-      <p class="panel-sub">Awards, scholarships and certificates.</p>
+      <h2>Achievements</h2><p class="sub">Awards, scholarships and certificates.</p>
       <div class="empty"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg></span><span>Coming soon: academic achievements, awards and certificates.</span></div>
     </section>
-
     <section class="panel" role="tabpanel" id="skills" aria-labelledby="t-skills">
-      <h2 class="panel-title">Technical skills</h2>
-      <p class="panel-sub">Languages, tools and security topics.</p>
+      <h2>Technical skills</h2><p class="sub">Languages, tools and security topics.</p>
       <div class="empty"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="20"height="20"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M5 12h14" /><path d="M12 5v14" /></svg></span><span>Coming soon: technical skills list.</span></div>
     </section>
-  </main>
-
-  <footer class="foot">
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container foot-in">
     <span>© <span class="year">2026</span> Ador Chowdhury</span>
-    <span><a href="mailto:ador8210@gmail.com">ador8210@gmail.com</a> · <a href="https://www.linkedin.com/in/ador-chowdhury-643596305">LinkedIn</a> · <a href="https://github.com/ador008">GitHub</a></span>
-  </footer>
+    <nav aria-label="Social"><a href="https://www.linkedin.com/in/ador-chowdhury-643596305">LinkedIn</a><a href="https://github.com/ador008">GitHub</a><a href="https://www.facebook.com/ador.crystalz">Facebook</a><a href="mailto:ador8210@gmail.com">Email</a></nav>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/4591618028" aria-label="Chat on WhatsApp"><svg aria-hidden="true" width="22" height="22" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a>
+
+<div class="modal" id="about" role="dialog" aria-modal="true" aria-labelledby="about-t">
+  <div class="sheet">
+    <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+    <span class="kicker">About me</span>
+    <h2 id="about-t">Technology and competition, one mindset</h2>
+    <p>I'm a Computer Science &amp; Engineering graduate, now doing an MSc in Cybersecurity at Aalborg University Copenhagen. Alongside my studies, I have spent years in competitive esports as a player, team captain, shoutcaster and tournament organizer.</p>
+    <p>I have played Mobile Legends: Bang Bang since 2017, and in 2023 I captained Team Bangladesh at the IESF Asia Qualifier in Saudi Arabia. Today I live in Denmark, where I'm building a home for mobile esports through Mobile Esports Denmark.</p>
+    <dl class="facts">
+      <div><dt>Based in</dt><dd>Copenhagen, Denmark</dd></div>
+      <div><dt>From</dt><dd>Bangladesh</dd></div>
+      <div><dt>Studying</dt><dd>MSc Cybersecurity, AAU</dd></div>
+      <div><dt>Esports</dt><dd>MLBB since 2017</dd></div>
+    </dl>
+    <p class="quote">“A person trying to learn new things every day, who wants to create a world without selfishness.”</p>
+  </div>
+</div>
+<div class="modal" id="contact" role="dialog" aria-modal="true" aria-labelledby="contact-t">
+  <div class="sheet">
+    <button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="18"height="18"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+    <span class="kicker">Contact</span>
+    <h2 id="contact-t">Let's talk</h2>
+    <p>Open to cybersecurity opportunities, esports projects and collaborations.</p>
+    <div class="rows">
+      <a href="mailto:ador8210@gmail.com"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span><small>Email</small><b>ador8210@gmail.com</b></span></a>
+      <a href="tel:+4591618028"><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg></span><span><small>Phone</small><b>+45 91 61 80 28</b></span></a>
+      <a href="https://wa.me/4591618028"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span><span><small>WhatsApp</small><b>Chat on WhatsApp</b></span></a>
+      <a href="https://www.linkedin.com/in/ador-chowdhury-643596305"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg></span><span><small>LinkedIn</small><b>ador-chowdhury</b></span></a>
+      <a href="https://github.com/ador008"><span class="ib"><svg aria-hidden="true" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg></span><span><small>GitHub</small><b>ador008</b></span></a>
+      <div><span class="ib"><svg aria-hidden="true"xmlns="http://www.w3.org/2000/svg"width="19"height="19"viewBox="0 0 24 24"fill="none"stroke="currentColor"stroke-width="2"stroke-linecap="round"stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg></span><span><small>Address</small><b>Værebrovej 8, 2880 Bagsværd, Denmark</b></span></div>
+    </div>
+  </div>
 </div>
 <script src="js/main.js"></script>
 </body>
