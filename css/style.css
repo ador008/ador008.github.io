@@ -165,7 +165,7 @@ main{flex:1}
 
 /* ---------- depth carousel ---------- */
 .look{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);gap:20px;align-items:start}
-.stage{position:relative;height:clamp(17rem,40vw,28rem);overflow:hidden;border-radius:var(--r-lg);background:var(--bg-elev);border:1px solid var(--border-subtle);touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.stage{position:relative;isolation:isolate;height:clamp(17rem,40vw,28rem);overflow:hidden;border-radius:var(--r-lg);background:var(--bg-elev);border:1px solid var(--border-subtle);touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .stage:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .stage.dragging{cursor:grabbing}
 .slide{position:absolute;top:50%;left:50%;width:min(62%,420px);aspect-ratio:4/3;margin:0;border-radius:18px;overflow:hidden;background:var(--photo-bg);box-shadow:0 18px 40px rgba(0,0,0,.35);transform-origin:center;will-change:transform,opacity,filter}
