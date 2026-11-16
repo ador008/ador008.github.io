@@ -439,3 +439,11 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .tl li,.card,.chips li{border:1px solid #ccc}
   a{text-decoration:none}
 }
+
+/* Achievements tally: titles / 2nd place / top 4 */
+.tally{list-style:none;padding:0;margin:0 0 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tally li{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:16px;border-radius:var(--r-md,12px);background:var(--card);border:1px solid var(--border-subtle)}
+.tally-n{font-family:var(--heading);font-size:2.4rem;font-weight:700;line-height:1;color:var(--text)}
+.tally li:first-child .tally-n{color:var(--accent)}
+.tally-l{color:var(--muted);font-size:.95rem}
+@media (max-width:600px){.tally{gap:8px}.tally li{padding:12px}.tally .medal{width:38px;height:38px;border-radius:11px}.tally-n{font-size:2rem}.tally-l{font-size:.85rem}}
