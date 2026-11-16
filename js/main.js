@@ -300,8 +300,9 @@
       var s = hit && hit.closest ? hit.closest('.slide') : null;
       var show = !dragging && s && slides.indexOf(s) === current;
       cursor.hidden = !show;
-      stage.style.cursor = show ? 'none' : '';
-      if (show) cursor.style.transform = 'translate(' + (e.clientX - r.left - 37) + 'px,' + (e.clientY - r.top - 37) + 'px)';
+      stage.style.cursor = show ? 'pointer' : '';
+      // Keep the real mouse visible; the small VIEW label sits just below-right of it.
+      if (show) cursor.style.transform = 'translate(' + (e.clientX - r.left + 16) + 'px,' + (e.clientY - r.top + 18) + 'px)';
     }
     stage.addEventListener('pointerleave', function () { if (cursor) cursor.hidden = true; stage.style.cursor = ''; });
 

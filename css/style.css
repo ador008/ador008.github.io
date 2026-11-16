@@ -170,7 +170,7 @@ main{flex:1}
 .stage.dragging{cursor:grabbing}
 .slide{position:absolute;top:50%;left:50%;width:min(62%,420px);aspect-ratio:4/3;margin:0;border-radius:18px;overflow:hidden;background:var(--photo-bg);box-shadow:0 18px 40px rgba(0,0,0,.35);transform-origin:center;will-change:transform,opacity,filter}
 .slide img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
-.view-cursor{position:absolute;top:0;left:0;z-index:30;width:4.6rem;height:4.6rem;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:.75rem;letter-spacing:.1em;pointer-events:none}
+.view-cursor{position:absolute;top:0;left:0;z-index:300;padding:.35rem .7rem;border-radius:99px;box-shadow:0 6px 16px rgba(0,0,0,.35);display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:.72rem;letter-spacing:.1em;pointer-events:none}
 .view-cursor[hidden]{display:none}
 .scrubber{position:relative;height:44px;margin-top:6px}
 .ticks{position:absolute;inset:0 10px;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
@@ -544,3 +544,7 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .cv-org{color:#444;font-weight:600}
 }
 .soon-note{text-align:center}.soon-note p{margin:0;font-family:var(--heading);font-weight:600;font-size:1.1rem;letter-spacing:.02em;color:var(--muted)}
+
+/* Carousel: a hand over every photo, so it is clear they can be clicked */
+.stage .slide{cursor:pointer}
+.stage.dragging,.stage.dragging .slide{cursor:grabbing}
