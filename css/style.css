@@ -447,3 +447,24 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .tally li:first-child .tally-n{color:var(--accent)}
 .tally-l{color:var(--muted);font-size:.95rem}
 @media (max-width:600px){.tally{gap:8px}.tally li{padding:12px}.tally .medal{width:38px;height:38px;border-radius:11px}.tally-n{font-size:2rem}.tally-l{font-size:.85rem}}
+
+/* ---------- hover glow: every clickable thing lights up ----------
+   --glow is the RGB of the light. Gold by default, red on red buttons and the Personal details card. */
+:root{--glow:245,165,36;--glow-red:255,77,102}
+[data-theme="light"]{--glow:217,119,6;--glow-red:200,16,46}
+.key.gold{background:var(--accent);border-color:#9a6206;color:var(--accent-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 14px rgba(245,165,36,.28)}
+.key:hover,.key:focus-visible,a:hover > .key,a:focus-visible > .key{
+  border-color:rgba(var(--glow),.9);
+  box-shadow:inset 0 1px 0 var(--btn-hi),0 0 0 3px rgba(var(--glow),.22),0 0 24px rgba(var(--glow),.55);
+  filter:brightness(1.12)}
+.key.primary:hover,.key.primary:focus-visible,.key.is-active:hover,.key.is-active:focus-visible,a:hover > .key.primary,a:focus-visible > .key.primary{
+  border-color:var(--primary-edge);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 0 0 3px rgba(var(--glow-red),.25),0 0 26px rgba(var(--glow-red),.6)}
+.key.gold:hover,a:hover > .key.gold{border-color:#9a6206}
+.path:hover .key,.path:focus-visible .key{transform:translateY(-1px)}
+.link:hover,.link:focus-visible{color:var(--accent-glow);text-decoration:underline;text-underline-offset:3px;text-shadow:0 0 14px rgba(var(--glow),.75)}
+.pill:hover,.yr:hover{border-color:rgba(var(--glow),.75);box-shadow:0 0 0 3px rgba(var(--glow),.14),0 0 20px rgba(var(--glow),.35)}
+.team-link:hover,.host:hover,.rows a:hover,.ev:has(.ev-pic:hover){border-color:rgba(var(--glow),.75);box-shadow:0 0 0 1px rgba(var(--glow),.35),0 0 30px rgba(var(--glow),.3)}
+.foot-in a:hover,.crumb:hover,.idlist a:hover,.brand:hover b{color:var(--accent-glow);text-shadow:0 0 12px rgba(var(--glow),.6)}
+.wa-fab:hover{box-shadow:0 0 0 4px rgba(37,211,102,.25),0 10px 34px rgba(37,211,102,.75)}
+.edu-page .pill,.edu-page .key,.edu-page .rows a{--glow:var(--glow-red)}
