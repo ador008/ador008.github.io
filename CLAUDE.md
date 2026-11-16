@@ -54,6 +54,9 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 
 ## MSc facts (from Ador)
 - BSc: Computer Science and Engineering, National University, Bangladesh, 2018-2023, CGPA 3.36/4.00 = 7 on the Danish scale (from Ador).
+- MSc: Sep 2024 to Jan 2027 (expected), grade average 7. SSC 2014, HSC 2016 (school names not given).
+- Experience: part-time at 7-Eleven (dates, country not given); Co-counselor MLBB at BYDESA (Bangladesh Youth Development and Electronic Sports Association); volunteer at official BYDESA tournaments.
+- Skills: Python, AI-assisted coding (he said 'vibe coding'); Wireshark, Nmap, Kali Linux; PyTorch, TensorFlow, Hugging Face; Linux, Windows, cloud environments. Languages: Bengali, English, Hindi, Urdu, a little Danish (levels not given).
 - Course descriptions on the site are general (written by Claude, AAU site was blocked); Ador should confirm, especially Hacker Space and Advanced Cybersecurity.
 - Courses: Sem 1 Fundamentals of Cryptography, Network Security, Internet of Things (IoT). Sem 2 Software Security, Hacker Space, Identity and Access Management. Sem 3 Advanced Cybersecurity, Enterprise Security, Privacy Engineering. Sem 4 thesis (in progress).
 - Projects: Sem 1 Data poisoning in distributed learning. Sem 2 Membership inference attacks in federated learning. Sem 3 Hallucinations in large language models. Thesis: Investigating the impact of prompt length on jailbreaks in large language models. He will add a report file and GitHub repo for each.
