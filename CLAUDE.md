@@ -5,7 +5,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 ## Structure
 - `index.html`: simple homepage (intro, About/Contact pop-ups, two section cards).
 - `personal.html`: Personal details (for cybersecurity job applications, and the source for his CV). Tabs: Profile, Education, Experience, Projects, Skills, Certificates, plus "Save CV as PDF" (print stylesheet). `education.html` redirects here.
-- `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Teams, Organizer (tournaments he hosted on Lazzy Winners, poster cards, newest first), Skills. Goal: every esports story and achievement with its year.
+- `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Teams, As an Organizer (tournaments he hosted on Lazzy Winners, poster cards, newest first), Skills. Goal: every esports story and achievement with its year.
 - `team-bangladesh.html`, `team-redviperz.html`, `team-venom.html`, `team-soulz.html`, `team-kingsmen.html`: one page per club (banner, achievements, photo carousel). Opened from the Teams tab cards.
 - `achievement.html`: redirect to `esports.html`. Keep it: the proposal PDF links to it.
 - `css/style.css`: all styles, colour tokens at the top (dark default, `[data-theme="light"]` overrides).
