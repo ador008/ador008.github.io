@@ -474,3 +474,10 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .mail-fab:hover{box-shadow:0 0 0 4px rgba(var(--glow-red),.25),0 10px 34px rgba(var(--glow-red),.7)}
 .es-page .mail-fab{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 28px rgba(245,165,36,.4)}
 .es-page .mail-fab:hover{box-shadow:0 0 0 4px rgba(var(--glow),.25),0 10px 34px rgba(var(--glow),.7)}
+.email-sheet{width:min(520px,100%)}
+.email-addr{display:flex;align-items:center;gap:12px;padding:12px 14px;margin:6px 0 16px;background:var(--card);border:1px solid var(--border-subtle);border-radius:var(--r-md)}
+.email-addr b{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:1.05rem;user-select:all}
+.email-actions{display:flex;flex-wrap:wrap;gap:10px}
+.email-note{margin:12px 0 0;font-size:.92rem;min-height:1.2em}
+@media (max-width:600px){.email-actions .key{flex:1 1 100%}}
+@media (max-width:420px){.email-addr .ib{display:none}.email-addr b{font-size:1rem}}

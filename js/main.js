@@ -59,6 +59,36 @@
     document.querySelectorAll('.modal.open').forEach(function (m) { m.classList.remove('open'); });
     if (any) { lock(false); if (lastFocus) lastFocus.focus(); }
   }
+  // Email pop-up, opened by the floating "Email me" button. Built here so every page gets it.
+  var EMAIL = 'ador8210@gmail.com';
+  var fab = document.querySelector('.mail-fab');
+  if (fab && !document.getElementById('email')) {
+    var em = document.createElement('div');
+    em.className = 'modal'; em.id = 'email';
+    em.setAttribute('role', 'dialog'); em.setAttribute('aria-modal', 'true'); em.setAttribute('aria-labelledby', 'email-t');
+    var mailIcon = '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>';
+    em.innerHTML = '<div class="sheet email-sheet">' +
+      '<button class="key icon x" type="button" data-close aria-label="Close"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>' +
+      '<h2 id="email-t">Email me</h2><p>Questions, opportunities or collaborations: write to me here.</p>' +
+      '<div class="email-addr"><span class="ib">' + mailIcon + '</span><b>' + EMAIL + '</b><button class="key" type="button" data-copy-email>Copy</button></div>' +
+      '<div class="btn-row email-actions">' +
+        '<a class="key primary lg" href="mailto:' + EMAIL + '">' + mailIcon + 'Open email app</a>' +
+        '<a class="key lg" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=' + EMAIL + '" target="_blank" rel="noopener">Write in Gmail</a>' +
+      '</div><p class="email-note" aria-live="polite"></p></div>';
+    document.body.appendChild(em);
+    fab.addEventListener('click', function (e) { e.preventDefault(); openModal('email'); });
+    var copyBtn = em.querySelector('[data-copy-email]'), note = em.querySelector('.email-note');
+    copyBtn.addEventListener('click', function () {
+      function done() { copyBtn.textContent = 'Copied!'; note.textContent = 'Email address copied.'; setTimeout(function () { copyBtn.textContent = 'Copy'; }, 2000); }
+      function fallback() {
+        var r = document.createRange(); r.selectNodeContents(em.querySelector('.email-addr b'));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        try { if (document.execCommand('copy')) { done(); return; } } catch (err) {}
+        note.textContent = 'Address selected: press copy on your keyboard or phone.';
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(EMAIL).then(done, fallback); else fallback();
+    });
+  }
   document.querySelectorAll('[data-open]').forEach(function (b) {
     b.addEventListener('click', function () { openModal(b.getAttribute('data-open')); });
   });
