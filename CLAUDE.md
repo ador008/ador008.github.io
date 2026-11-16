@@ -22,22 +22,23 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Show Ador a clickable preview before anything is merged. He does not want screenshots. Publish the preview as a private claude.ai artifact (raw.githack did not load the CSS on his phone).
 - Work on a branch and open a pull request; Ador merges, and GitHub Pages deploys from `main`.
 - The portfolio covers his PAST activities only. Do not mention Mobile Esports Denmark anywhere on the site: it is not approved yet. Add it only if Ador says the meeting went well.
-- Never invent facts. If a detail is missing (skills, dates, university name), leave it out or show "Coming soon", and ask him.
+- Never invent facts. If a detail is missing (skills, dates, university name), leave it out and ask him.
+- Never show notes meant for Ador on the live site (no "to add" lines, no "+ Add ..." boxes). Leave the space blank; use "Coming soon" only where more content is really on the way (Ador, 17 Nov 2026: "sometimes keeping blank looks nicer").
 - Use plain, simple English when explaining things to Ador.
 
-## Current status (handoff, 15 Nov 2026)
-- Branch `claude/busy-hamilton-2lj1l7` holds the redesign; it is NOT merged yet. `main` still has the old site plus the LinkedIn/WhatsApp/Denmark contact updates (PRs #1 and #2, merged).
-- Ador said the current design "is okay for now"; next step is optimising it page by page.
-- Preview: private claude.ai artifact https://claude.ai/artifact/K5qdUtUsAxfuw9bRLqSqjZ. It is a copy of the site: `index.html` there has no `<!DOCTYPE>/<html>/<head>/<body>` wrapper (the artifact adds it); the other files are the repo files as-is. Republish it after each change (read it first, then publish to that URL). Save CV as PDF and mailto/tel links do not work inside the preview, only on the real site.
-- When Ador approves: open a PR from the branch to `main` and let him merge.
+## Current status (17 Nov 2026)
+- The redesign is LIVE: PR #3 (redesign) and PR #4 (European PDF CV) are merged into `main`. Keep working on branch `claude/busy-hamilton-2lj1l7`; open a new PR for each batch of changes and let Ador merge.
+- Preview: private claude.ai artifact https://claude.ai/artifact/K5qdUtUsAxfuw9bRLqSqjZ. It is a copy of the site: `index.html` there has no `<!DOCTYPE>/<html>/<head>/<body>` wrapper (the artifact adds it); the other files are the repo files as-is. Republish it after each change (read it first, then publish to that URL). Save CV as PDF and mailto links do not work inside the preview, only on the real site.
+- Floating button on every page is "Email me" (opens a pop-up with Copy / email app / Gmail); WhatsApp is only in the Contact pop-up.
+- Hover glow effects are mouse-only (`@media (hover:hover) and (pointer:fine)`), so tapped buttons don't stay lit on phones.
 - Earlier work in this project: his proposal PDF "Mobile Esports Denmark – Proposal for Esport Danmark" was redesigned (done, not in this repo).
-- Environment: skills.sh and zabulanakakil.github.io are allowed hosts; Canva connector works; find-skills is installed by the environment setup script; Ador enabled the frontend-design skill (load it for design work).
+- Environment: skills.sh and zabulanakakil.github.io are allowed hosts (aau.dk is blocked); Canva connector works; find-skills is installed by the environment setup script; the frontend-design skill was not available in the 16 Nov session.
 
 ## Esports facts confirmed by Ador
 - In-game name: Ares. Four clubs: Soulz of BD (co-leader, midlaner/ADC), Red Viperz, Venom Esports, and his own team KINGSMEN.
 - Virtual Cup 2020 (BD Coins and The Axis): Soulz of BD champions, 3-1 vs Blank Nation, Ador MVP of the final.
 - Venom Esports (Arena of Valor): co-leader, Dark Slayer laner (leader Diablo). 2022 Arena of Valor Bangladesh Championship: semi-finalist, top 4. Green jerseys = Arena of Valor Bangladesh Championship tournament jersey; blue = Venom Esports club jersey (confirmed). Links: green photo -> 1Mm7hJi5kn post, blue mirror selfie -> 1GbVzEMYyE post.
-- Venom Esports was covered in Jugantor (national daily): Dhaka division final of the Arena of Valor Bangladesh Championship at Jamuna Future Park, BDT 25 lakh prize pool. Ador is third from the left in the photo. Ador called it the semi-final match; confirm wording.
+- Venom Esports was covered in Jugantar (national daily): Dhaka division final of the Arena of Valor Bangladesh Championship at Jamuna Future Park, BDT 25 lakh prize pool. Ador is third from the left in the photo. Ador called it the semi-final match; confirm wording.
 - D1 Cup (MLBB): runner-up with his own team KINGSMEN (jersey says SGC Kingsmen). His last tournament in Bangladesh before moving to Denmark to study. Year: 2024 (from Ador); has its own 2024 chapter in the Story tab.
 - BASIS Esports Championship 2023: Red Viperz (RV Gaming) champions, BDT 40,000; same team played IESF. Red Viperz post: share/18oXTTXFjQ (poster image redviperz-basis-2023.jpg). Poster lists Xecution, Raeburn, Blaze, Serjjj, K7, Mr.Rey: ask which name was Ador's.
 - Clash of Titans Season 2 (MLBB; Bangladesh, Nepal, Pakistan, India): KINGSMEN won the Bangladesh qualifier. It was an ONLINE tournament: they did not travel to Nepal (never say "played in Nepal"). Post: share/p/152EapeM9ZL. Year: 2024 (from Ador); in the 2024 Story chapter. Result of the main event not given yet.
@@ -48,7 +49,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - MLBB Cosplay Competition (gaming cosplay contest, poster branded Lazzy Plays): winners announced live on Lazzy Winners 10 August at 2 pm; year not given; post share/p/1DyLiF3veF.
 - Queens of MLBB: 4v4 brawl, girl gamers only, presented by Mobile Legends: Bang Bang Official Bangladesh (poster branded Lazzy Plays); winner 2,000 diamonds, runner-up 1,000; free; registration from 25 May; year not given; post share/p/1JNtajHqqc.
 - Banner backgrounds (chosen by Ador): Personal details uses the coat photo (images/portrait-coat.jpg, from old pic15.jpg); Esports uses the D1 Cup trophy photo (images/kingsmen-d1-cup.jpg). The homepage cards use the same two photos.
-- Team achievements (from Ador): Red Viperz (Ador was team leader; one of the biggest esports organizations in Bangladesh) = regional champion IESF South Asia qualifier, BASIS champion, IUB runner-up (he called it "IUB esports expo"; site says IUB Gaming Fest, confirm). All black-and-red jersey photos are Red Viperz. Venom = top 4 AoV Bangladesh + Jugantor coverage. Soulz of BD = Virtual Cup champion, Codashop MLBB Challenge champion (2021, from Ador; own Story chapter, no photo or post yet). KINGSMEN = D1 Cup runner-up, winner Bangladesh regional qualifier for Clash of Titans S2 (online).
+- Team achievements (from Ador): Red Viperz (Ador was team leader; one of the biggest esports organizations in Bangladesh) = regional champion IESF South Asia qualifier, BASIS champion, IUB runner-up (he called it "IUB esports expo"; site says IUB Gaming Fest, confirm). All black-and-red jersey photos are Red Viperz. Venom = top 4 AoV Bangladesh + Jugantar coverage. Soulz of BD = Virtual Cup champion, Codashop MLBB Challenge champion (2021, from Ador; own Story chapter, no photo or post yet). KINGSMEN = D1 Cup runner-up, winner Bangladesh regional qualifier for Clash of Titans S2 (online).
 - Team Bangladesh (IESF Asia Qualifier, Saudi Arabia 2023): photos bd-iesf-stage, bd-iesf-kazakhstan, bd-iesf-philippines (post share/p/1FwSNV1282, same link for all three) and bd-iesf-road-to-riyadh poster (no link).
 - Images that have a source post link to that post when clicked.
 

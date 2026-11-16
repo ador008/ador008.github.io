@@ -543,3 +543,4 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .cv-row p{margin:.6mm 0 0}
   .cv-org{color:#444;font-weight:600}
 }
+.soon-note{text-align:center}.soon-note p{margin:0;font-family:var(--heading);font-weight:600;font-size:1.1rem;letter-spacing:.02em;color:var(--muted)}
