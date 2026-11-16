@@ -132,7 +132,9 @@
   document.querySelectorAll('[data-print]').forEach(function (b) {
     b.addEventListener('click', function () {
       document.querySelectorAll('.panel').forEach(function (p) { p.classList.add('active'); });
+      var oldTitle = document.title; document.title = 'Ador Chowdhury CV';
       window.print();
+      document.title = oldTitle;
       showTab(location.hash.slice(1), false);
     });
   });
