@@ -509,3 +509,7 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 @media (max-width:600px){.sem-grid{grid-template-columns:1fr}.thesis h3{font-size:1.3rem}}
 @media print{.pj-links,.side-note{display:none!important}.sem,.pj{border:1px solid #ccc;break-inside:avoid}.pj-grid,.sem-grid{grid-template-columns:1fr 1fr}}
 .pj .now{margin-left:0}
+.sem ul{gap:12px}
+.sem li b{display:block;font-weight:700}
+.sem li span{display:block;font-weight:400;color:var(--muted);font-size:.95rem;line-height:1.5;margin-top:2px}
+.sem li::before{top:.62em}

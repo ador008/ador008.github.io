@@ -53,6 +53,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Images that have a source post link to that post when clicked.
 
 ## MSc facts (from Ador)
+- Course descriptions on the site are general (written by Claude, AAU site was blocked); Ador should confirm, especially Hacker Space and Advanced Cybersecurity.
 - Courses: Sem 1 Fundamentals of Cryptography, Network Security, Internet of Things (IoT). Sem 2 Software Security, Hacker Space, Identity and Access Management. Sem 3 Advanced Cybersecurity, Enterprise Security, Privacy Engineering. Sem 4 thesis (in progress).
 - Projects: Sem 1 Data poisoning in distributed learning. Sem 2 Membership inference attacks in federated learning. Sem 3 Hallucinations in large language models. Thesis: Investigating the impact of prompt length on jailbreaks in large language models. He will add a report file and GitHub repo for each.
 
