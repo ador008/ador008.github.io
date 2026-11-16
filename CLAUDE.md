@@ -4,7 +4,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 
 ## Structure
 - `index.html`: simple homepage (intro, About/Contact pop-ups, two section cards).
-- `personal.html`: Personal details (for cybersecurity job applications, and the source for his CV). Tabs: Profile, Education, Experience, Projects, Skills, Certificates, plus "Save CV as PDF" (print stylesheet). `education.html` redirects here.
+- `personal.html`: Personal details = his academic CV (for cybersecurity job applications). NO esports content here except the short "Outside my studies" card linking to esports.html. Tabs: Profile, Education (degrees + MSc courses by semester), Experience, Thesis & projects (thesis card first, then semester projects; Report/GitHub buttons say "coming soon" until Ador sends files/repos), Skills, Certificates, plus "Save CV as PDF". `education.html` redirects here. Learning Hub was removed at Ador's request.
 - `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Teams, As an Organizer (tournaments he hosted on Lazzy Winners, poster cards, newest first), Skills. Goal: every esports story and achievement with its year.
 - `team-bangladesh.html`, `team-redviperz.html`, `team-venom.html`, `team-soulz.html`, `team-kingsmen.html`: one page per club (banner, achievements, photo carousel). Opened from the Teams tab cards.
 - `achievement.html`: redirect to `esports.html`. Keep it: the proposal PDF links to it.
@@ -51,6 +51,10 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - Team achievements (from Ador): Red Viperz (Ador was team leader; one of the biggest esports organizations in Bangladesh) = regional champion IESF South Asia qualifier, BASIS champion, IUB runner-up (he called it "IUB esports expo"; site says IUB Gaming Fest, confirm). All black-and-red jersey photos are Red Viperz. Venom = top 4 AoV Bangladesh + Jugantor coverage. Soulz of BD = Virtual Cup champion, Codashop MLBB Challenge champion (2021, from Ador; own Story chapter, no photo or post yet). KINGSMEN = D1 Cup runner-up, winner Bangladesh regional qualifier for Clash of Titans S2 (online).
 - Team Bangladesh (IESF Asia Qualifier, Saudi Arabia 2023): photos bd-iesf-stage, bd-iesf-kazakhstan, bd-iesf-philippines (post share/p/1FwSNV1282, same link for all three) and bd-iesf-road-to-riyadh poster (no link).
 - Images that have a source post link to that post when clicked.
+
+## MSc facts (from Ador)
+- Courses: Sem 1 Fundamentals of Cryptography, Network Security, Internet of Things (IoT). Sem 2 Software Security, Hacker Space, Identity and Access Management. Sem 3 Advanced Cybersecurity, Enterprise Security, Privacy Engineering. Sem 4 thesis (in progress).
+- Projects: Sem 1 Data poisoning in distributed learning. Sem 2 Membership inference attacks in federated learning. Sem 3 Hallucinations in large language models. Thesis: Investigating the impact of prompt length on jailbreaks in large language models. He will add a report file and GitHub repo for each.
 
 ## Content still needed from Ador
 Esports: missing years (2018, 2019, 2021, 2024, 2025); confirm the year he joined Soulz of BD (roster post placed under 2020), other titles and placements with years, years per team and in-game role. Personal details: languages, work experience, certificates/courses, more projects.
