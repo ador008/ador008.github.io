@@ -77,6 +77,9 @@
       '</div><p class="email-note" aria-live="polite"></p></div>';
     document.body.appendChild(em);
     fab.addEventListener('click', function (e) { e.preventDefault(); openModal('email'); });
+    // Inside a frame (like the claude.ai preview) a plain mailto link is blocked, so open it in a new window there.
+    var inFrame = false; try { inFrame = window.self !== window.top; } catch (err) { inFrame = true; }
+    if (inFrame) em.querySelectorAll('a[href^="mailto:"]').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener'; });
     var copyBtn = em.querySelector('[data-copy-email]'), note = em.querySelector('.email-note');
     copyBtn.addEventListener('click', function () {
       function done() { copyBtn.textContent = 'Copied!'; note.textContent = 'Email address copied.'; setTimeout(function () { copyBtn.textContent = 'Copy'; }, 2000); }
