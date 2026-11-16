@@ -468,3 +468,9 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .foot-in a:hover,.crumb:hover,.idlist a:hover,.brand:hover b{color:var(--accent-glow);text-shadow:0 0 12px rgba(var(--glow),.6)}
 .wa-fab:hover{box-shadow:0 0 0 4px rgba(37,211,102,.25),0 10px 34px rgba(37,211,102,.75)}
 .edu-page .pill,.edu-page .key,.edu-page .rows a{--glow:var(--glow-red)}
+
+/* Floating email button (replaces the WhatsApp one). Red on Home/Personal, gold on Esports pages. */
+.mail-fab{background:var(--primary);color:#fff;box-shadow:0 10px 28px rgba(200,16,46,.45)}
+.mail-fab:hover{box-shadow:0 0 0 4px rgba(var(--glow-red),.25),0 10px 34px rgba(var(--glow-red),.7)}
+.es-page .mail-fab{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 28px rgba(245,165,36,.4)}
+.es-page .mail-fab:hover{box-shadow:0 0 0 4px rgba(var(--glow),.25),0 10px 34px rgba(var(--glow),.7)}
