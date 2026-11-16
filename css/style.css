@@ -90,7 +90,7 @@ main{flex:1}
 .path-edu:hover{border-color:rgba(255,77,102,.55);box-shadow:0 24px 54px rgba(200,16,46,.22)}
 .path-es:hover{border-color:rgba(245,165,36,.55);box-shadow:0 24px 54px rgba(245,165,36,.2)}
 .path::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none}
-.path-edu::before{background:radial-gradient(circle at 88% 12%,rgba(200,16,46,.35),transparent 55%)}
+.path-edu::before{background:radial-gradient(circle at 92% 6%,rgba(200,16,46,.14),transparent 40%)}
 .path-es::before{background:radial-gradient(circle at 88% 12%,rgba(245,165,36,.3),transparent 55%)}
 .path .bg{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;transition:transform .8s}
 .path:hover .bg{transform:scale(1.05)}
@@ -98,7 +98,7 @@ main{flex:1}
 .path h3{color:#fff;font-size:clamp(2rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
 .path p{color:#d4d4d4;max-width:440px;margin-bottom:18px}
 .path .key{align-self:flex-start}
-.path-edu .bg{background-image:linear-gradient(135deg,rgba(120,8,28,.35),rgba(10,10,10,.1)),url(../images/portrait-coat.jpg);background-position:50% 20%}
+.path-edu .bg{background-image:url(../images/portrait-coat.jpg);background-position:50% 20%}
 .path-es .bg{background-image:url(../images/kingsmen-d1-cup.jpg);background-position:50% 25%}
 
 /* ---------- section pages ---------- */
