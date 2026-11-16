@@ -6,6 +6,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - `index.html`: simple homepage (intro, About/Contact pop-ups, two section cards).
 - `personal.html`: Personal details (for cybersecurity job applications, and the source for his CV). Tabs: Profile, Education, Experience, Projects, Skills, Certificates, plus "Save CV as PDF" (print stylesheet). `education.html` redirects here.
 - `esports.html`: pill tabs: Highlights (depth photo carousel), Story (one year at a time with year buttons), Achievements (grouped by year), Organizer (tournaments he hosted on Lazzy Winners, poster cards, newest first), Teams, Skills. Goal: every esports story and achievement with its year.
+- `team-redviperz.html`, `team-venom.html`, `team-soulz.html`, `team-kingsmen.html`: one page per club (banner, achievements, photo carousel). Opened from the Teams tab cards.
 - `achievement.html`: redirect to `esports.html`. Keep it: the proposal PDF links to it.
 - `css/style.css`: all styles, colour tokens at the top (dark default, `[data-theme="light"]` overrides).
 - `js/main.js`: theme toggle, menu, pop-ups, tabs, carousel, View all, lightbox, print.
@@ -47,6 +48,7 @@ Personal portfolio and online CV, served by GitHub Pages from `main`. Plain HTML
 - MLBB Cosplay Competition (gaming cosplay contest, poster branded Lazzy Plays): winners announced live on Lazzy Winners 10 August at 2 pm; year not given; post share/p/1DyLiF3veF.
 - Queens of MLBB: 4v4 brawl, girl gamers only, presented by Mobile Legends: Bang Bang Official Bangladesh (poster branded Lazzy Plays); winner 2,000 diamonds, runner-up 1,000; free; registration from 25 May; year not given; post share/p/1JNtajHqqc.
 - Banner backgrounds (chosen by Ador): Personal details uses the coat photo (images/portrait-coat.jpg, from old pic15.jpg); Esports uses the D1 Cup trophy photo (images/kingsmen-d1-cup.jpg). The homepage cards use the same two photos.
+- Team achievements (from Ador): Red Viperz = regional champion IESF South Asia qualifier, BASIS champion, IUB runner-up (he called it "IUB esports expo"; site says IUB Gaming Fest, confirm). All black-and-red jersey photos are Red Viperz. Venom = top 4 AoV Bangladesh + Jugantor coverage. Soulz of BD = Virtual Cup champion, Codashop MLBB Challenge champion (year unknown). KINGSMEN = D1 Cup runner-up, winner Bangladesh regional qualifier for Clash of Titans S2 hosted in Nepal.
 - Images that have a source post link to that post when clicked.
 
 ## Content still needed from Ador

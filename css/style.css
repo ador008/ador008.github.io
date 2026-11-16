@@ -362,6 +362,17 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .host-facts dd{font-weight:600}
 .host-body .link{margin-top:auto;padding-top:6px}
 
+/* team cards that open a team page */
+.team-link{padding:0}
+.team-link a{display:block;height:100%;padding:22px;text-decoration:none;color:inherit;border-radius:inherit}
+.team-link:hover{border-color:rgba(245,165,36,.5);transform:translateY(-3px)}
+.team{transition:border-color .2s,transform .2s}
+.team-go{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:.95rem;color:var(--accent)}
+.team-link:hover .team-go svg{transform:translateX(4px)}
+.team-go svg{transition:transform .2s}
+.team-ach{margin-bottom:8px}
+.team-photos{margin-top:34px}
+
 /* ---------- responsive ---------- */
 @media (max-width:980px){
   .nav{display:none}
