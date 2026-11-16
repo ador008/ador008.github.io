@@ -516,3 +516,4 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .skill-group+.skill-group{margin-top:14px}
 .skill-group h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:8px}
 .tl .when .exp{font-family:var(--body);font-weight:500;font-size:.85rem;color:var(--muted)}
+.idlist div{grid-template-columns:140px minmax(0,1fr)}@media (max-width:600px){.idlist div{grid-template-columns:132px minmax(0,1fr)}}
