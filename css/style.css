@@ -571,3 +571,23 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .flood-panel{margin:40px 10px 0;max-height:calc(100vh - var(--header-h) - 50px);max-height:calc(100dvh - var(--header-h) - 50px)}
   .flood-back::after{top:12px}
 }
+
+/* ---------- 3D avatar in the homepage hero ---------- */
+.hero-photo[data-avatar3d]{width:min(380px,100%);margin:0}
+.av-stage,.av-bar,.av-bubble{display:none}
+.hero-photo.ready .av-fallback{display:none}
+.hero-photo.ready .av-stage{display:block;position:relative;z-index:1;width:100%;aspect-ratio:4/5;border-radius:28px;border:1px solid var(--border);
+  background:radial-gradient(120% 80% at 50% 100%,rgba(245,165,36,.16),transparent 60%),linear-gradient(180deg,var(--card),var(--bg-elev));
+  box-shadow:0 30px 60px rgba(0,0,0,.4);cursor:grab;touch-action:none;overflow:hidden}
+.hero-photo.ready .av-stage:active{cursor:grabbing}
+.av-stage canvas{display:block;width:100%!important;height:100%!important}
+.hero-photo.ready .av-bar{display:flex;position:relative;z-index:2;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+.av-hint{color:var(--muted);font-size:.9rem;font-weight:600}
+.hero-photo.touched .av-hint{opacity:.6}
+.av-say{height:2.4rem;font-size:.9rem}
+.hero-photo.ready .av-bubble{display:block;position:absolute;z-index:3;top:7%;right:4%;margin:0;padding:.55rem .9rem;border-radius:16px 16px 4px 16px;
+  background:var(--primary);color:#fff;font-family:var(--heading);font-weight:800;font-size:1rem;letter-spacing:.01em;box-shadow:0 10px 24px rgba(200,16,46,.45);
+  opacity:0;transform:translateY(6px) scale(.92);transition:opacity .25s,transform .25s;pointer-events:none}
+.hero-photo.ready .av-bubble.show{opacity:1;transform:none}
+@media (max-width:900px){.hero-photo[data-avatar3d]{width:min(320px,86%)}}
+@media (max-width:600px){.hero-photo.ready .av-bubble{top:3%;right:3%;font-size:.88rem;padding:.45rem .75rem}}
