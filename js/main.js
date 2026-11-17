@@ -46,7 +46,25 @@
 
   // ---------- Pop-ups ----------
   var lastFocus = null;
-  function lock(on) { document.body.style.overflow = on ? 'hidden' : ''; }
+  // Scrolling is frozen while a pop-up or the "View all" grid is open, and only unfrozen when none is left open.
+  function lock(on) {
+    if (on) { document.body.style.overflow = 'hidden'; return; }
+    if (!document.querySelector('.modal.open, .flood.open')) document.body.style.overflow = '';
+  }
+  // Close every pop-up and "View all" grid and turn scrolling back on.
+  function closeAllOverlays() {
+    document.querySelectorAll('.modal.open, .flood.open').forEach(function (m) { m.classList.remove('open'); });
+    document.body.style.overflow = '';
+  }
+  // Leaving the page, coming back with the browser's Back button, or switching tab must never leave scrolling frozen.
+  window.addEventListener('pagehide', closeAllOverlays);
+  window.addEventListener('pageshow', closeAllOverlays);
+  document.addEventListener('tabshown', closeAllOverlays);
+  window.addEventListener('hashchange', closeAllOverlays);
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (a && !a.target && a.getAttribute('href').charAt(0) !== '#' && a.href.indexOf('mailto:') !== 0) closeAllOverlays();
+  });
   function openModal(id) {
     var m = document.getElementById(id);
     if (!m) return;
