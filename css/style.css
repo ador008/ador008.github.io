@@ -563,3 +563,11 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .flood-nav{top:40px;margin:-10px -16px 12px;padding:4px 16px 10px}
   .flood-back::after{content:"Tap outside to close";position:absolute;top:18px;left:0;right:0;text-align:center;color:rgba(255,255,255,.75);font-size:.85rem;font-weight:600;letter-spacing:.02em}
 }
+/* "View all" starts below the site header, so Home / Personal details / Esports / Contact stay visible and clickable,
+   like on every other page. The mobile menu (z 49) and pop-ups (z 95) still open above it. */
+.flood{top:var(--header-h);z-index:45}
+.flood-panel{margin:3vh auto;max-height:calc(100vh - var(--header-h) - 6vh)}
+@media (max-width:600px){
+  .flood-panel{margin:40px 10px 0;max-height:calc(100vh - var(--header-h) - 50px);max-height:calc(100dvh - var(--header-h) - 50px)}
+  .flood-back::after{top:12px}
+}
