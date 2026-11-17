@@ -548,3 +548,18 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 /* Carousel: a hand over every photo, so it is clear they can be clicked */
 .stage .slide{cursor:pointer}
 .stage.dragging,.stage.dragging .slide{cursor:grabbing}
+
+/* ---------- "View all" window: section bar + room to tap outside ---------- */
+.flood-nav{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:-4px 0 16px;padding:2px 2px 4px}
+.flood-nav::-webkit-scrollbar{display:none}
+.fn-pill{flex:none;display:inline-flex;align-items:center;height:2.3rem;padding:0 1rem;border-radius:99px;border:1px solid var(--border);background:var(--card);color:var(--text);font-family:var(--heading);font-weight:600;font-size:.92rem;text-decoration:none;white-space:nowrap;cursor:pointer}
+.fn-pill[aria-current="true"]{border-color:var(--accent);box-shadow:0 0 0 3px rgba(245,165,36,.18)}
+@media (hover:hover) and (pointer:fine){.fn-pill:hover{border-color:rgba(var(--glow),.75);box-shadow:0 0 0 3px rgba(var(--glow),.14),0 0 18px rgba(var(--glow),.3)}}
+.flood-head{position:sticky;top:-22px;z-index:2;background:var(--bg-elev);margin:-22px -22px 12px;padding:22px 22px 10px}
+.flood-nav{position:sticky;top:44px;z-index:2;background:var(--bg-elev);margin:-12px -22px 14px;padding:4px 22px 10px}
+@media (max-width:600px){
+  .flood-panel{margin:58px 10px 0;height:auto;max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);border-radius:var(--r-lg);padding:16px}
+  .flood-head{top:-16px;margin:-16px -16px 10px;padding:16px 16px 8px}
+  .flood-nav{top:40px;margin:-10px -16px 12px;padding:4px 16px 10px}
+  .flood-back::after{content:"Tap outside to close";position:absolute;top:18px;left:0;right:0;text-align:center;color:rgba(255,255,255,.75);font-size:.85rem;font-weight:600;letter-spacing:.02em}
+}

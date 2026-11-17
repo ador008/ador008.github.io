@@ -339,6 +339,8 @@
     // View all grid
     var viewAll = look.querySelector('[data-viewall]');
     if (flood && grid && viewAll) {
+      // Move the grid to <body> so it always sits above the header (inside <main> it was layered underneath it).
+      document.body.appendChild(flood);
       slides.forEach(function (s, i) {
         var b = document.createElement('button');
         b.type = 'button';
@@ -346,6 +348,35 @@
         b.addEventListener('click', function () { closeFlood(); pos = i; current = -1; render(); stage.focus(); });
         grid.appendChild(b);
       });
+      // Section bar inside "View all": jump to Story, Achievements and so on without pressing X first.
+      // On the Esports page it switches tabs; on a team page it links to that section of the Esports page.
+      var head = flood.querySelector('.flood-head');
+      if (head && !flood.querySelector('.flood-nav')) {
+        var nav = document.createElement('nav');
+        nav.className = 'flood-nav';
+        nav.setAttribute('aria-label', 'Go to another section');
+        var pageTabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+        var items = pageTabs.length ? pageTabs.map(function (t) { return [t.getAttribute('aria-controls'), t.textContent.trim()]; })
+          : [['highlights', 'Highlights'], ['story', 'Story'], ['achievements', 'Achievements'], ['teams', 'Teams'], ['organizer', 'As an Organizer'], ['skills', 'Skills']];
+        var here = section.id || 'highlights';
+        items.forEach(function (it) {
+          var el;
+          if (pageTabs.length) {
+            el = document.createElement('button'); el.type = 'button';
+            el.addEventListener('click', function () {
+              closeFlood(); showTab(it[0], true);
+              var bar = document.querySelector('.pills'); if (bar) bar.scrollIntoView({ block: 'start', behavior: reduce ? 'auto' : 'smooth' });
+            });
+          } else {
+            el = document.createElement('a'); el.href = 'esports.html#' + it[0];
+          }
+          el.className = 'fn-pill';
+          if (pageTabs.length && it[0] === here) el.setAttribute('aria-current', 'true');
+          el.textContent = it[1];
+          nav.appendChild(el);
+        });
+        head.insertAdjacentElement('afterend', nav);
+      }
       viewAll.addEventListener('click', function () { flood.classList.add('open'); lock(true); });
       flood.addEventListener('click', function (e) { if (e.target.closest('[data-close-flood]')) closeFlood(); });
     }
