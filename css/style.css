@@ -577,7 +577,7 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
 .av-stage,.av-bar,.av-bubble{display:none}
 .hero-photo.ready .av-fallback{display:none}
 .hero-photo.ready .av-stage{display:block;position:relative;z-index:1;width:100%;aspect-ratio:4/5;border-radius:28px;border:1px solid var(--border);
-  background:radial-gradient(90% 70% at 50% 40%,#26262b,#141416);
+  background:radial-gradient(120% 80% at 50% 100%,rgba(245,165,36,.16),transparent 60%),linear-gradient(180deg,var(--card),var(--bg-elev));
   box-shadow:0 30px 60px rgba(0,0,0,.4);cursor:grab;overflow:hidden}
 .hero-photo.ready .av-stage:active{cursor:grabbing}
 .av-stage canvas{display:block;width:100%!important;height:100%!important}
