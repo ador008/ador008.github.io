@@ -571,3 +571,12 @@ button.host-pic{border:0;padding:0;width:100%;cursor:zoom-in}
   .flood-panel{margin:40px 10px 0;max-height:calc(100vh - var(--header-h) - 50px);max-height:calc(100dvh - var(--header-h) - 50px)}
   .flood-back::after{top:12px}
 }
+
+/* Zoom inside the photo viewers */
+.zoom-box{position:relative;overflow:hidden;border-radius:12px;background:#000;height:min(72vh,720px);touch-action:none;cursor:zoom-in;user-select:none;-webkit-user-select:none}
+.zoom-box.zoomed{cursor:grab}
+.zoom-box.zoomed:active{cursor:grabbing}
+.zoom-box img{width:100%;height:100%;object-fit:contain;transform-origin:50% 50%;will-change:transform;pointer-events:none}
+.zoom-hint{margin:8px 4px 0;font-size:.85rem;color:var(--muted)}
+.zoom-cap{margin:6px 4px 0;color:var(--text);font-weight:600}
+@media (max-width:720px){.zoom-box{height:58vh}}
